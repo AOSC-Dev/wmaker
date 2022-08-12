@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WindowMaker 0.95.9\n"
 "Report-Msgid-Bugs-To: wmaker-dev@googlegroups.com\n"
-"POT-Creation-Date: 2020-06-20 13:50+0200\n"
-"PO-Revision-Date: 2020-06-28 07:47+0000\n"
+"POT-Creation-Date: 2022-08-11 22:56-0700\n"
+"PO-Revision-Date: 2022-08-11 23:00-0700\n"
 "Last-Translator: XOR <wmaker-dev@googlegroups.com>\n"
 "Language-Team: Turkish\n"
 "Language: tr\n"
@@ -323,8 +323,7 @@ msgstr "Görünüm Tercihleri"
 msgid ""
 "Background texture configuration for windows,\n"
 "menus and icons."
-msgstr ""
-"Windows, menüler ve simgeler için arka plan doku yapılandırması."
+msgstr "Windows, menüler ve simgeler için arka plan doku yapılandırması."
 
 #: ../../WPrefs.app/Appearance.c:2295
 msgid "Extract Texture"
@@ -366,7 +365,8 @@ msgid ""
 "the `pixelization' effect. This will slow\n"
 "down loading of background images considerably."
 msgstr ""
-"Pikselleştirme efektini nötralize eden pürüzsüz ölçekli arka plan resimleri.\n"
+"Pikselleştirme efektini nötralize eden pürüzsüz ölçekli arka plan "
+"resimleri.\n"
 "Bu, arka plan görüntülerinin yüklenmesini önemli ölçüde yavaşlatır."
 
 #: ../../WPrefs.app/Configurations.c:247
@@ -633,11 +633,21 @@ msgstr "Diyalogları sahipleriyle aynı çalışma alanında aç."
 msgid "Wrap dock-attached icons around the screen edges."
 msgstr "Dock-ekli simgeleri ekran kenarlarına sarın."
 
-#: ../../WPrefs.app/Expert.c:325
+#. default:
+#: ../../WPrefs.app/Expert.c:118
+msgid "Double click on titlebar maximize a window to full screen."
+msgstr ""
+
+#. default:
+#: ../../WPrefs.app/Expert.c:121
+msgid "Close rootmenu when mouse (left or right) is clicked outside focus."
+msgstr ""
+
+#: ../../WPrefs.app/Expert.c:331
 msgid "Expert User Preferences"
 msgstr "Uzman Kullanıcı Tercihleri"
 
-#: ../../WPrefs.app/Expert.c:327
+#: ../../WPrefs.app/Expert.c:333
 msgid ""
 "Options for people who know what they're doing...\n"
 "Also has some other misc. options."
@@ -696,9 +706,9 @@ msgstr ""
 "Bu seçenek bir seferde yalnızca sınırlı sayıda renk görüntüleyebilen "
 "ekranlar içindir, bu nedenle her uygulamanın ihtiyaçları için özelleştirdiği "
 "dizine alınmış bir renk tablosu (ColorMap olarak adlandırılır) kullanırlar "
-"ve WindowMaker genel ColorMap'i etkin olarak dinamik olarak ayarlar uygulama."
-" WindowMaker'ın bilgi panelinde ekranınızın yeteneğini 'görsel' olarak "
-"bilebilirsiniz."
+"ve WindowMaker genel ColorMap'i etkin olarak dinamik olarak ayarlar "
+"uygulama. WindowMaker'ın bilgi panelinde ekranınızın yeteneğini 'görsel' "
+"olarak bilebilirsiniz."
 
 #: ../../WPrefs.app/Focus.c:240
 msgid "...that has the input focus"
@@ -1472,8 +1482,7 @@ msgstr "Çağrıldığında stdout'a bir menü tanımı veren bir komut girin."
 msgid ""
 "Cache menu contents after opening for\n"
 "the first time"
-msgstr ""
-"İlk kez açtıktan sonra menü içeriğini önbelleğe al"
+msgstr "İlk kez açtıktan sonra menü içeriğini önbelleğe al"
 
 #: ../../WPrefs.app/Menu.c:667
 msgid ""

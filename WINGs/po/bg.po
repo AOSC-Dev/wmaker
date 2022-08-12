@@ -4,200 +4,436 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: WINGs 0.80.0\n"
-"POT-Creation-Date: 2003-02-08 21:42+0200\n"
-"PO-Revision-Date: 2003-02-09 12:10+0200\n"
+"Project-Id-Version: WindowMaker 0.95.9\n"
+"Report-Msgid-Bugs-To: wmaker-dev@googlegroups.com\n"
+"POT-Creation-Date: 2022-08-11 22:56-0700\n"
+"PO-Revision-Date: 2022-08-11 22:59-0700\n"
 "Last-Translator: Anton Zinoviev <zinoviev@debian.org>\n"
 "Language-Team: Bulgarian <dict@linux.zonebg.com>\n"
+"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../WINGs/connection.c:461 ../../WINGs/connection.c:526
-#: ../../WINGs/connection.c:569
-msgid "Bad address-service-protocol combination"
-msgstr "Неправилна комбинация адрес-услуга-протокол"
-
-#: ../../WINGs/error.c:54
-#, c-format
-msgid "Unknown error %d"
-msgstr "Непозната грешка %d"
-
-#: ../../WINGs/error.c:59
-#, c-format
-msgid "Error %d"
-msgstr "Грешка %d"
-
-#: ../../WINGs/error.c:110
-msgid "warning: "
-msgstr "внимание: "
-
-#: ../../WINGs/error.c:137
+#: ../../WINGs/error.c:106
 msgid "fatal: "
 msgstr "критична грешка: "
 
-#: ../../WINGs/error.c:163 ../../WINGs/error.c:192
+#: ../../WINGs/error.c:112
 msgid "error: "
 msgstr "грешка: "
 
-#: ../../WINGs/findfile.c:48
+#: ../../WINGs/error.c:118
+msgid "warning: "
+msgstr "внимание: "
+
+#: ../../WINGs/findfile.c:63
 #, c-format
 msgid "could not get password entry for UID %i"
 msgstr "не може да се получи записът за парола на потребител с номер %i"
 
-#: ../../WINGs/findfile.c:66
+#: ../../WINGs/findfile.c:93
 #, c-format
 msgid "could not get password entry for user %s"
 msgstr "не може да се получи записът за парола на потребител %s<"
 
-#: ../../WINGs/host.c:114
-msgid "Cannot get current host name"
-msgstr "Не може да се получи името на хоста"
+#: ../../WINGs/findfile.c:212
+#, fuzzy, c-format
+msgid "could not expand %s"
+msgstr "Не може да бъде отворен %s"
 
-#: ../../WINGs/proplist.c:91
+#: ../../WINGs/findfile.c:441
+#, fuzzy, c-format
+msgid "Could not open input file \"%s\": %s"
+msgstr "Не може да бъде отворен %s"
+
+#: ../../WINGs/findfile.c:457
+#, fuzzy, c-format
+msgid "Could not create target file \"%s\": %s"
+msgstr "Не може да бъде създаден %s"
+
+#: ../../WINGs/findfile.c:465
+#, fuzzy
+msgid "could not allocate memory for the copy buffer"
+msgstr "не може да се задели цвят %s"
+
+#: ../../WINGs/findfile.c:482
+#, fuzzy, c-format
+msgid "could not read from file \"%s\": %s"
+msgstr "не може да се получи размерът за файл \"%s\""
+
+#: ../../WINGs/findfile.c:497
+#, fuzzy, c-format
+msgid "could not write data to file \"%s\": %s"
+msgstr "не може да се получи размерът за файл \"%s\""
+
+#: ../../WINGs/findfile.c:509
+#, fuzzy, c-format
+msgid "could not set permission 0%03o on file \"%s\": %s"
+msgstr "не може да се получи размерът за файл \"%s\""
+
+#: ../../WINGs/findfile.c:513
+#, fuzzy, c-format
+msgid "could not close the file \"%s\": %s"
+msgstr "не може да се получи размерът за файл \"%s\""
+
+#: ../../WINGs/menuparser.c:110
+#, c-format
+msgid "   included from file \"%s\" at line %d"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:142
+#, c-format
+msgid "missing #endif to match #%s at line %d"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:200
+msgid "multiple SHORTCUT definition not valid"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:253
+msgid "premature end of file while expecting a new line after '\\'"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:279
+#, c-format
+msgid "reached end of file while searching '*/' for comment started at line %d"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:344
+msgid "missing closing double-quote before end-of-line"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:362
+msgid "missing closing simple-quote before end-of-line"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:380
+msgid "too many nested macro expansions, breaking loop"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:439
+#, c-format
+msgid "unknown directive '#%s'"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:444
+#, c-format
+msgid "extra text after '#' command is ignored: \"%.16s...\""
+msgstr ""
+
+#: ../../WINGs/menuparser.c:459
+msgid "no file name found for #include"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:471
+msgid "file name must be enclosed in brackets or double-quotes for #define"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:485
+#, c-format
+msgid "missing closing '%c' in filename specification"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:503
+msgid "too many nested #include's"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:568
+#, fuzzy, c-format
+msgid "could not find file \"%s\" for #include"
+msgstr "не може да се получи размерът за файл \"%s\""
+
+#: ../../WINGs/menuparser.c:589
+#, c-format
+msgid "missing macro name argument to #%s"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:600
+msgid "too many nested #if sequences"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:626 ../../WINGs/menuparser.c:643
+#, c-format
+msgid "found #%s but has no matching #if"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:166
+msgid "no macro name found for #define"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:187
+#, c-format
+msgid "premature end of file while reading arg-list for macro \"%s\""
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:194
+#, c-format
+msgid "too many parameters for macro \"%s\" definition"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:209
+#, c-format
+msgid ""
+"invalid character '%c' in arg-list for macro \"%s\" while expecting "
+"parameter name"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:220
+#, c-format
+msgid ""
+"invalid character '%c' in arg-list for macro \"%s\" while expecting ',' or "
+"')'"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:253
+#, c-format
+msgid "macro \"%s\" already defined, ignoring redefinition"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:346
+#, c-format
+msgid "more content than supported for the macro \"%s\""
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:455
+#, c-format
+msgid "expansion for macro \"%s\" too big, line truncated"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:467
+#, c-format
+msgid "macro \"%s\" needs parenthesis for arguments"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:498
+msgid "missing closing quote or double-quote before end-of-line"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:521
+#, c-format
+msgid "too many arguments for macro \"%s\", expected only %d"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:530
+#, c-format
+msgid "premature end of line while searching for arguments to macro \"%s\""
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:536
+#, c-format
+msgid "not enough arguments for macro \"%s\", expected %d but got only %d"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:541
+#, c-format
+msgid "too much data in parameter list of macro \"%s\", truncated"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:561
+#, c-format
+msgid "size of value for macro '%s' is too big, truncated"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:642 ../../WINGs/menuparser_macros.c:668
+#, fuzzy, c-format
+msgid "could not determine %s"
+msgstr "Не може да бъде създаден %s"
+
+#: ../../WINGs/proplist.c:78
 #, c-format
 msgid "syntax error in %s %s, line %i: %s"
 msgstr "синтактична грешка в %s %s, ред %i: %s"
 
-#: ../../WINGs/proplist.c:150
+#: ../../WINGs/proplist.c:134
 msgid "Only string or data is supported for a proplist dictionary key"
 msgstr "Като ключ за достъп до proplist се поддържат само низове или данни"
 
-#: ../../WINGs/proplist.c:184 ../../WINGs/proplist.c:236
-#: ../../WINGs/proplist.c:394 ../../WINGs/proplist.c:474
-#: ../../WINGs/proplist.c:1075 ../../WINGs/proplist.c:1127
-#: ../../WINGs/proplist.c:1293 ../../WINGs/proplist.c:1372
-#: ../../WINGs/proplist.c:1493 ../../WINGs/proplist.c:1540
+#: ../../WINGs/proplist.c:167 ../../WINGs/proplist.c:217
+#: ../../WINGs/proplist.c:382 ../../WINGs/proplist.c:458
+#: ../../WINGs/proplist.c:1048 ../../WINGs/proplist.c:1098
+#: ../../WINGs/proplist.c:1246 ../../WINGs/proplist.c:1326
+#: ../../WINGs/proplist.c:1431 ../../WINGs/proplist.c:1475
 msgid "Used proplist functions on non-WMPropLists objects"
 msgstr "Ползват се proplist-функции за обекти, които не са от тип WMPropLists"
 
-#: ../../WINGs/proplist.c:630
+#: ../../WINGs/proplist.c:635
 msgid "unterminated PropList string"
 msgstr "незавършен низ PropList"
 
-#: ../../WINGs/proplist.c:670
+#: ../../WINGs/proplist.c:673
 msgid "unterminated PropList data"
 msgstr "незавършени данни PropList"
 
-#: ../../WINGs/proplist.c:678
+#: ../../WINGs/proplist.c:681
 msgid "unterminated PropList data (missing hexdigit)"
 msgstr "незавършени данни PropList (липсва шестнадесетично число)"
 
-#: ../../WINGs/proplist.c:690 ../../WINGs/proplist.c:695
+#: ../../WINGs/proplist.c:693 ../../WINGs/proplist.c:698
 msgid "non hexdigit character in PropList data"
 msgstr "знак, който не е шестнадесетично число, в данни PropList"
 
-#: ../../WINGs/proplist.c:729
+#: ../../WINGs/proplist.c:730
 msgid "unterminated PropList array"
 msgstr "незавършен масив PropList"
 
-#: ../../WINGs/proplist.c:737
+#: ../../WINGs/proplist.c:738
 msgid "missing or unterminated PropList array"
 msgstr "липсващ или незавършен масив Proplist"
 
-#: ../../WINGs/proplist.c:747
+#: ../../WINGs/proplist.c:748
 msgid "could not get PropList array element"
 msgstr "не може да се получи елемент от масив PropList"
 
-#: ../../WINGs/proplist.c:776
+#: ../../WINGs/proplist.c:775
 msgid "unterminated PropList dictionary"
 msgstr "незавършен речник PropList"
 
-#: ../../WINGs/proplist.c:793
+#: ../../WINGs/proplist.c:792
 msgid "missing PropList dictionary key"
 msgstr "липсващ ключ за достъп до PropList"
 
-#: ../../WINGs/proplist.c:795
+#: ../../WINGs/proplist.c:794
 msgid "missing PropList dictionary entry key or unterminated dictionary"
 msgstr "липсващ ключ за достъп до PropList или незавършен речник"
 
-#: ../../WINGs/proplist.c:803
+#: ../../WINGs/proplist.c:802
 msgid "error parsing PropList dictionary key"
 msgstr "грешка при разбор на ключ в PropList"
 
-#: ../../WINGs/proplist.c:811
+#: ../../WINGs/proplist.c:810
 msgid "missing = in PropList dictionary entry"
 msgstr "липсва знак за равенство в елемент на PropList"
 
-#: ../../WINGs/proplist.c:819
+#: ../../WINGs/proplist.c:818
 msgid "error parsing PropList dictionary entry value"
 msgstr "грешка при разбор на стойност на елемент в PropList"
 
-#: ../../WINGs/proplist.c:827
+#: ../../WINGs/proplist.c:826
 msgid "missing ; in PropList dictionary entry"
 msgstr "липсва знак точка и запетая в елемент на PropList"
 
-#: ../../WINGs/proplist.c:888
+#: ../../WINGs/proplist.c:885
 msgid ""
 "was expecting a string, data, array or dictionary. If it's a string, try "
 "enclosing it with \"."
-msgstr "очакваха се низ, данни, масив или речник. Ако е речник, пробвайте да го оградите с \"."
+msgstr ""
+"очакваха се низ, данни, масив или речник. Ако е речник, пробвайте да го "
+"оградите с \"."
 
-#: ../../WINGs/proplist.c:892
+#: ../../WINGs/proplist.c:888
 msgid "Comments are not allowed inside WindowMaker owned domain files."
-msgstr "Не се позволяват коментари във файлове с области, собственост на Уиндоу Мейкър"
+msgstr ""
+"Не се позволяват коментари във файлове с области, собственост на Уиндоу "
+"Мейкър"
 
-#: ../../WINGs/proplist.c:1563 ../../WINGs/proplist.c:1628
+#: ../../WINGs/proplist.c:1495 ../../WINGs/proplist.c:1560
+#: ../../WINGs/proplist.c:1624
 msgid "extra data after end of property list"
 msgstr "данни в повече след края на списък свойства"
 
-#: ../../WINGs/proplist.c:1606
+#: ../../WINGs/proplist.c:1535
 #, c-format
 msgid "could not get size for file '%s'"
 msgstr "не може да се получи размерът за файл \"%s\""
 
-#: ../../WINGs/proplist.c:1618
+#: ../../WINGs/proplist.c:1543
 #, c-format
 msgid "error reading from file '%s'"
 msgstr "грешка при четене от файл \"%s\""
 
-#: ../../WINGs/proplist.c:1669
+#: ../../WINGs/proplist.c:1590
+#, fuzzy, c-format
+msgid "%s:could not open menu file"
+msgstr "Не може да бъде отворен %s"
+
+#: ../../WINGs/proplist.c:1672
 #, c-format
 msgid "mkstemp (%s) failed"
 msgstr "mkstemp (%s) не успя"
 
-#: ../../WINGs/proplist.c:1680
+#: ../../WINGs/proplist.c:1682
 #, c-format
 msgid "mktemp (%s) failed"
 msgstr "mktemp (%s) не успя"
 
-#: ../../WINGs/proplist.c:1691
+#: ../../WINGs/proplist.c:1689
 #, c-format
 msgid "open (%s) failed"
 msgstr "open (%s) не успя"
 
-#: ../../WINGs/proplist.c:1698
+#: ../../WINGs/proplist.c:1696
 #, c-format
 msgid "writing to file: %s failed"
 msgstr "записът във файл %s не успя"
 
-#: ../../WINGs/proplist.c:1706
+#: ../../WINGs/proplist.c:1705
 #, c-format
 msgid "fclose (%s) failed"
 msgstr "fclose (%s) не успя"
 
-#: ../../WINGs/proplist.c:1715
+#: ../../WINGs/proplist.c:1713
 #, c-format
 msgid "rename ('%s' to '%s') failed"
 msgstr "преименуването (от \"%s\" на \"%s\") не успя"
 
+#: ../../WINGs/proplist.c:1784
+#, fuzzy, c-format
+msgid "Could not create component %s"
+msgstr "Не може да бъде създаден %s"
+
+#: ../../WINGs/userdefaults.c:72
+msgid "variable WMAKER_USER_ROOT defined with invalid path, not used"
+msgstr ""
+
 #. something happened with the file. just overwrite it
-#: ../../WINGs/userdefaults.c:192 ../../WINGs/userdefaults.c:208
+#: ../../WINGs/userdefaults.c:207 ../../WINGs/userdefaults.c:222
 #, c-format
 msgid "cannot read domain from file '%s' when syncing"
 msgstr "не може да се прочете областта от файл \"%s\" при синхронизиране"
 
-#: ../../WINGs/wcolor.c:198 ../../WINGs/wcolor.c:211 ../../WINGs/wcolor.c:250
-#: ../../WINGs/wcolor.c:291
+#: ../../WINGs/dragcommon.c:60
+#, c-format
+msgid "unknown XDND action %s"
+msgstr ""
+
+#: ../../WINGs/dragcommon.c:142
+#, c-format
+msgid "target %lu for XDND message no longer exists"
+msgstr ""
+
+#: ../../WINGs/dragcommon.c:220
+#, c-format
+msgid "unsupported version %i for XDND enter message"
+msgstr ""
+
+#: ../../WINGs/dragsource.c:163
+msgid "XDND selection lost during drag operation..."
+msgstr ""
+
+#: ../../WINGs/dragsource.c:758
+msgid "could not get XDND version for target of drop"
+msgstr ""
+
+#: ../../WINGs/dragsource.c:774
+msgid "could not get ownership of XDND selection"
+msgstr ""
+
+#: ../../WINGs/dragsource.c:1070
+msgid "delay for drag destination response expired"
+msgstr ""
+
+#: ../../WINGs/wcolor.c:204 ../../WINGs/wcolor.c:214 ../../WINGs/wcolor.c:250
+#: ../../WINGs/wcolor.c:288
 #, c-format
 msgid "could not allocate %s color"
 msgstr "не може да се задели цвят %s"
 
-#: ../../WINGs/wcolor.c:198
+#: ../../WINGs/wcolor.c:204
 msgid "white"
 msgstr "бял"
 
-#: ../../WINGs/wcolor.c:211
+#: ../../WINGs/wcolor.c:214
 msgid "black"
 msgstr "черен"
 
@@ -205,185 +441,193 @@ msgstr "черен"
 msgid "gray"
 msgstr "сив"
 
-#: ../../WINGs/wcolor.c:291
+#: ../../WINGs/wcolor.c:288
 msgid "dark gray"
 msgstr "тъмносив"
 
-#: ../../WINGs/wcolorpanel.c:415
+#: ../../WINGs/wcolorpanel.c:390
 msgid "Colors"
 msgstr "Цветове"
 
-#: ../../WINGs/wcolorpanel.c:605 ../../WINGs/wcolorpanel.c:2824
+#: ../../WINGs/wcolorpanel.c:565 ../../WINGs/wcolorpanel.c:2719
 msgid "Brightness"
 msgstr "Яркост"
 
-#: ../../WINGs/wcolorpanel.c:607 ../../WINGs/wcolorpanel.c:683
-#: ../../WINGs/wcolorpanel.c:716 ../../WINGs/wcolorpanel.c:750
-#: ../../WINGs/wcolorpanel.c:810 ../../WINGs/wcolorpanel.c:844
-#: ../../WINGs/wcolorpanel.c:878 ../../WINGs/wcolorpanel.c:913
-#: ../../WINGs/wcolorpanel.c:2164 ../../WINGs/wcolorpanel.c:2826
-#: ../../WINGs/wcolorpanel.c:2862 ../../WINGs/wcolorpanel.c:2898
-#: ../../WINGs/wcolorpanel.c:3746
+#: ../../WINGs/wcolorpanel.c:567 ../../WINGs/wcolorpanel.c:641
+#: ../../WINGs/wcolorpanel.c:672 ../../WINGs/wcolorpanel.c:703
+#: ../../WINGs/wcolorpanel.c:778 ../../WINGs/wcolorpanel.c:809
+#: ../../WINGs/wcolorpanel.c:841 ../../WINGs/wcolorpanel.c:874
+#: ../../WINGs/wcolorpanel.c:2013 ../../WINGs/wcolorpanel.c:2721
+#: ../../WINGs/wcolorpanel.c:2755 ../../WINGs/wcolorpanel.c:2789
 msgid "Color Panel: Could not allocate memory"
 msgstr "Color Panel: не може да се задели памет"
 
-#: ../../WINGs/wcolorpanel.c:680 ../../WINGs/wcolorpanel.c:681
+#: ../../WINGs/wcolorpanel.c:639
 msgid "Red"
 msgstr "Червен"
 
-#: ../../WINGs/wcolorpanel.c:713 ../../WINGs/wcolorpanel.c:714
+#: ../../WINGs/wcolorpanel.c:670
 msgid "Green"
 msgstr "Зелен"
 
-#: ../../WINGs/wcolorpanel.c:747 ../../WINGs/wcolorpanel.c:748
+#: ../../WINGs/wcolorpanel.c:701
 msgid "Blue"
 msgstr "Син"
 
-#: ../../WINGs/wcolorpanel.c:807 ../../WINGs/wcolorpanel.c:808
+#: ../../WINGs/wcolorpanel.c:715
+msgid "Decimal"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:723
+msgid "Hexadecimal"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:776
 msgid "Cyan"
 msgstr "Синьозелен"
 
-#: ../../WINGs/wcolorpanel.c:841 ../../WINGs/wcolorpanel.c:842
+#: ../../WINGs/wcolorpanel.c:807
 msgid "Magenta"
 msgstr "Пурпурен"
 
-#: ../../WINGs/wcolorpanel.c:875 ../../WINGs/wcolorpanel.c:876
+#: ../../WINGs/wcolorpanel.c:839
 msgid "Yellow"
 msgstr "Жълт"
 
-#: ../../WINGs/wcolorpanel.c:910 ../../WINGs/wcolorpanel.c:911
+#: ../../WINGs/wcolorpanel.c:872
 msgid "Black"
 msgstr "Черен"
 
-#: ../../WINGs/wcolorpanel.c:991
+#: ../../WINGs/wcolorpanel.c:947
 msgid "Spectrum"
 msgstr "Спектър"
 
-#: ../../WINGs/wcolorpanel.c:1021
+#: ../../WINGs/wcolorpanel.c:973
 msgid "Palette"
 msgstr "Палитра"
 
-#: ../../WINGs/wcolorpanel.c:1027
+#: ../../WINGs/wcolorpanel.c:978
 msgid "New from File..."
 msgstr "Нова от файл..."
 
-#: ../../WINGs/wcolorpanel.c:1028 ../../WINGs/wcolorpanel.c:1076
-#: ../../WINGs/wcolorpanel.c:1093
+#: ../../WINGs/wcolorpanel.c:979 ../../WINGs/wcolorpanel.c:1024
+#: ../../WINGs/wcolorpanel.c:1039
 msgid "Rename..."
 msgstr "Преименувай..."
 
-#: ../../WINGs/wcolorpanel.c:1029 ../../WINGs/wcolorpanel.c:1077
-#: ../../WINGs/wcolorpanel.c:1094 ../../WINGs/wcolorpanel.c:3321
+#: ../../WINGs/wcolorpanel.c:980 ../../WINGs/wcolorpanel.c:1025
+#: ../../WINGs/wcolorpanel.c:1040 ../../WINGs/wcolorpanel.c:3179
 msgid "Remove"
 msgstr "Премахни"
 
-#: ../../WINGs/wcolorpanel.c:1030
+#: ../../WINGs/wcolorpanel.c:981
 msgid "Copy"
 msgstr "Копирай"
 
-#: ../../WINGs/wcolorpanel.c:1031
+#: ../../WINGs/wcolorpanel.c:982
 #, fuzzy
 msgid "New from Clipboard"
 msgstr "Нова от Clipboard"
 
-#: ../../WINGs/wcolorpanel.c:1052
+#: ../../WINGs/wcolorpanel.c:1001
 msgid "X11-Colors"
 msgstr "Цветове от X11"
 
-#: ../../WINGs/wcolorpanel.c:1069
+#: ../../WINGs/wcolorpanel.c:1018
 msgid "Color"
 msgstr "Цвят"
 
-#: ../../WINGs/wcolorpanel.c:1075
+#: ../../WINGs/wcolorpanel.c:1023
 msgid "Add..."
 msgstr "Добави..."
 
-#: ../../WINGs/wcolorpanel.c:1085
+#: ../../WINGs/wcolorpanel.c:1033
 msgid "List"
 msgstr "Списък"
 
-#: ../../WINGs/wcolorpanel.c:1092
+#: ../../WINGs/wcolorpanel.c:1038
 msgid "New..."
 msgstr "Нов..."
 
-#: ../../WINGs/wcolorpanel.c:1231
+#: ../../WINGs/wcolorpanel.c:1167
 #, c-format
 msgid ""
 "Color Panel: Could not create directory %s needed to store configurations"
-msgstr "Color Panel: Не може да се създаде директория %s, необходима за да се запазят настройките"
+msgstr ""
+"Color Panel: Не може да се създаде директория %s, необходима за да се "
+"запазят настройките"
 
 #. Delete the file, it doesn't belong here
-#: ../../WINGs/wcolorpanel.c:1237 ../../WINGs/wcolorpanel.c:3207
-#: ../../WINGs/wcolorpanel.c:3211
+#: ../../WINGs/wcolorpanel.c:1173 ../../WINGs/wcolorpanel.c:3072
+#: ../../WINGs/wcolorpanel.c:3076
 msgid "File Error"
 msgstr "Файлова грешка"
 
-#: ../../WINGs/wcolorpanel.c:1238
+#: ../../WINGs/wcolorpanel.c:1174
 msgid "Could not create ColorPanel configuration directory"
 msgstr "Не може да се създаде конфигурационна директория за ColorPanel"
 
-#: ../../WINGs/wcolorpanel.c:1239 ../../WINGs/wcolorpanel.c:3208
-#: ../../WINGs/wcolorpanel.c:3213 ../../WINGs/wcolorpanel.c:3240
-#: ../../WINGs/wfilepanel.c:250 ../../WINGs/wfilepanel.c:647
-#: ../../WINGs/wfilepanel.c:659 ../../WINGs/wfilepanel.c:760
-#: ../../WINGs/wfilepanel.c:971 ../../WINGs/wfontpanel.c:709
+#: ../../WINGs/wcolorpanel.c:1175 ../../WINGs/wcolorpanel.c:3073
+#: ../../WINGs/wcolorpanel.c:3078 ../../WINGs/wcolorpanel.c:3103
+#: ../../WINGs/wfilepanel.c:227 ../../WINGs/wfilepanel.c:596
+#: ../../WINGs/wfilepanel.c:611 ../../WINGs/wfilepanel.c:715
+#: ../../WINGs/wfilepanel.c:883 ../../WINGs/wfontpanel.c:532
 msgid "OK"
 msgstr "Приемам"
 
-#: ../../WINGs/wcolorpanel.c:1245 ../../WINGs/wcolorpanel.c:1281
-#: ../../WINGs/wcolorpanel.c:1299
+#: ../../WINGs/wcolorpanel.c:1181
 msgid "Color Panel: Could not find file"
 msgstr "Color Panel: Не може да се открие файла"
 
-#: ../../WINGs/wcolorpanel.c:1486 ../../WINGs/wcolorpanel.c:1551
-#: ../../WINGs/wcolorpanel.c:1615
+#: ../../WINGs/wcolorpanel.c:1377 ../../WINGs/wcolorpanel.c:1438
+#: ../../WINGs/wcolorpanel.c:1498
 msgid "Color Panel: X failed request"
 msgstr "Color Panel: не успя заявка към X"
 
-#: ../../WINGs/wcolorpanel.c:2860
+#: ../../WINGs/wcolorpanel.c:2753
 msgid "Saturation"
 msgstr "Наситеност"
 
-#: ../../WINGs/wcolorpanel.c:2896
+#: ../../WINGs/wcolorpanel.c:2787
 msgid "Hue"
 msgstr "Нюанс"
 
-#: ../../WINGs/wcolorpanel.c:3146
+#: ../../WINGs/wcolorpanel.c:3011
 msgid "Open Palette"
 msgstr "Отваряне на палитра"
 
-#: ../../WINGs/wcolorpanel.c:3208
+#: ../../WINGs/wcolorpanel.c:3073
 msgid "Invalid file format !"
 msgstr "Неправилен файлов формат!"
 
-#: ../../WINGs/wcolorpanel.c:3210
+#: ../../WINGs/wcolorpanel.c:3075
 #, c-format
 msgid "can't remove file %s"
 msgstr "не може да се изтрие файлът %s"
 
-#: ../../WINGs/wcolorpanel.c:3212
+#: ../../WINGs/wcolorpanel.c:3077
 msgid "Couldn't remove file from Configuration Directory !"
 msgstr "Не може да се изтрие файл от директорията за настройки!"
 
-#: ../../WINGs/wcolorpanel.c:3239
+#: ../../WINGs/wcolorpanel.c:3102
 msgid "Rename"
 msgstr "Преименуване"
 
-#: ../../WINGs/wcolorpanel.c:3239
+#: ../../WINGs/wcolorpanel.c:3102
 msgid "Rename palette to:"
 msgstr "Преименувай палитрата на "
 
-#: ../../WINGs/wcolorpanel.c:3240 ../../WINGs/wfilepanel.c:259
-#: ../../WINGs/wfilepanel.c:659 ../../WINGs/wfilepanel.c:760
+#: ../../WINGs/wcolorpanel.c:3103 ../../WINGs/wfilepanel.c:236
+#: ../../WINGs/wfilepanel.c:611 ../../WINGs/wfilepanel.c:715
 msgid "Cancel"
 msgstr "Отменям"
 
 #. Careful, this palette exists already
-#: ../../WINGs/wcolorpanel.c:3256 ../../WINGs/wfilepanel.c:760
+#: ../../WINGs/wcolorpanel.c:3119 ../../WINGs/wfilepanel.c:715
 msgid "Warning"
 msgstr "Внимание"
 
-#: ../../WINGs/wcolorpanel.c:3257
+#: ../../WINGs/wcolorpanel.c:3120
 msgid ""
 "Palette already exists !\n"
 "\n"
@@ -393,24 +637,24 @@ msgstr ""
 "\n"
 "Да бъде ли заменена с новата?"
 
-#: ../../WINGs/wcolorpanel.c:3257 ../../WINGs/wcolorpanel.c:3321
+#: ../../WINGs/wcolorpanel.c:3120 ../../WINGs/wcolorpanel.c:3179
 msgid "No"
 msgstr "Не"
 
-#: ../../WINGs/wcolorpanel.c:3257 ../../WINGs/wcolorpanel.c:3321
+#: ../../WINGs/wcolorpanel.c:3120 ../../WINGs/wcolorpanel.c:3179
 msgid "Yes"
 msgstr "Да"
 
-#: ../../WINGs/wcolorpanel.c:3289
-#, c-format
-msgid "Couldn't rename palette %s to %s\n"
+#: ../../WINGs/wcolorpanel.c:3151
+#, fuzzy, c-format
+msgid "Couldn't rename palette %s to %s"
 msgstr "Палитрата %s не може да се преименува на %s\n"
 
-#: ../../WINGs/wcolorpanel.c:3315
+#: ../../WINGs/wcolorpanel.c:3174
 msgid "This will permanently remove the palette "
 msgstr "Това ще отстрани палитрата необратимо "
 
-#: ../../WINGs/wcolorpanel.c:3318
+#: ../../WINGs/wcolorpanel.c:3176
 msgid ""
 ".\n"
 "\n"
@@ -420,241 +664,276 @@ msgstr ""
 "\n"
 "Убедени ли сте, че искате да отстраните тази палитра?"
 
-#: ../../WINGs/wcolorpanel.c:3343
-#, c-format
-msgid "Couldn't remove palette %s\n"
+#: ../../WINGs/wcolorpanel.c:3198
+#, fuzzy, c-format
+msgid "Couldn't remove palette %s"
 msgstr "Палитрата %s не може да бъде отстранена\n"
 
-#: ../../WINGs/wcolorpanel.c:3648
-#, c-format
-msgid "Could not open %s"
-msgstr "Не може да бъде отворен %s"
-
-#: ../../WINGs/wcolorpanel.c:3655
-#, c-format
-msgid "Could not create %s"
-msgstr "Не може да бъде създаден %s"
-
-#: ../../WINGs/wcolorpanel.c:3666
-#, c-format
-msgid "Write error on file %s"
-msgstr "Грешка при запис във файл %s"
-
-#: ../../WINGs/wcolorpanel.c:3711
+#: ../../WINGs/wcolorpanel.c:3501
 msgid "Color Panel: Color unspecified"
 msgstr "Color Panel: Не е посочен цвят"
 
-#: ../../WINGs/wfilepanel.c:235
+#: ../../WINGs/wfilepanel.c:216
 msgid "Name:"
 msgstr "Име:"
 
-#: ../../WINGs/wfilepanel.c:332 ../../WINGs/wfilepanel.c:396
+#: ../../WINGs/wfilepanel.c:306 ../../WINGs/wfilepanel.c:364
 msgid "Open"
 msgstr "Отвори"
 
-#: ../../WINGs/wfilepanel.c:350 ../../WINGs/wfilepanel.c:402
+#: ../../WINGs/wfilepanel.c:322 ../../WINGs/wfilepanel.c:370
 msgid "Save"
 msgstr "Запази"
 
-#: ../../WINGs/wfilepanel.c:562
+#: ../../WINGs/wfilepanel.c:506
 #, c-format
 msgid "WINGs: could not open directory %s\n"
 msgstr "WINGs: директорията %s не може да се отвори\n"
 
-#: ../../WINGs/wfilepanel.c:580
+#: ../../WINGs/wfilepanel.c:526
 #, c-format
 msgid "WINGs: could not stat %s\n"
 msgstr "WINGs: не могат да се получат атрибутите (stat) за %s\n"
 
-#: ../../WINGs/wfilepanel.c:647 ../../WINGs/wfilepanel.c:970
-#: ../../WINGs/wfontpanel.c:708
+#: ../../WINGs/wfilepanel.c:596 ../../WINGs/wfilepanel.c:883
+#: ../../WINGs/wfontpanel.c:531
 msgid "Error"
 msgstr "Грешка"
 
-#: ../../WINGs/wfilepanel.c:658
+#: ../../WINGs/wfilepanel.c:610
 msgid "Create Directory"
 msgstr "Създаване на директория"
 
-#: ../../WINGs/wfilepanel.c:659
+#: ../../WINGs/wfilepanel.c:611
 msgid "Enter directory name"
 msgstr "Въведете името на директорията"
 
-#: ../../WINGs/wfilepanel.c:695 ../../WINGs/wfilepanel.c:734
-#: ../../WINGs/wfilepanel.c:765 ../../WINGs/wfilepanel.c:793
-msgid "Permission denied."
-msgstr "Отказан достъп"
+#: ../../WINGs/wfilepanel.c:639
+#, fuzzy, c-format
+msgid "Can not create %s: %s"
+msgstr "Не може да бъде създаден %s"
 
-#: ../../WINGs/wfilepanel.c:698
-#, c-format
-msgid "'%s' already exists."
-msgstr "вече съществува \"%s\"."
-
-#: ../../WINGs/wfilepanel.c:701
-msgid "Path does not exist."
-msgstr "Пътят не съществува."
-
-#: ../../WINGs/wfilepanel.c:731 ../../WINGs/wfilepanel.c:790
-#, c-format
-msgid "'%s' does not exist."
-msgstr "Не съществува \"%s\"."
-
-#: ../../WINGs/wfilepanel.c:738 ../../WINGs/wfilepanel.c:797
-msgid "Insufficient memory available."
-msgstr "Не е достъпна достатъчно памет."
-
-#: ../../WINGs/wfilepanel.c:742 ../../WINGs/wfilepanel.c:801
-#, c-format
-msgid "'%s' is on a read-only filesystem."
-msgstr "\"%s\" се намира във файлова система с достъп само за четене."
-
-#: ../../WINGs/wfilepanel.c:745 ../../WINGs/wfilepanel.c:777
-#: ../../WINGs/wfilepanel.c:804
-#, c-format
-msgid "Can not delete '%s'."
+#: ../../WINGs/wfilepanel.c:705
+#, fuzzy, c-format
+msgid "Can not find %s: %s"
 msgstr "\"%s\" не може да бъде изтрит."
 
-#: ../../WINGs/wfilepanel.c:752
-#, c-format
-msgid "Delete directory %s ?"
-msgstr "Да се изтрие ли директорията %s?"
-
-#: ../../WINGs/wfilepanel.c:756
-#, c-format
-msgid "Delete file %s ?"
+#: ../../WINGs/wfilepanel.c:711
+#, fuzzy, c-format
+msgid "Delete %s %s?"
 msgstr "Да се изтрие ли файлът %s?"
 
-#: ../../WINGs/wfilepanel.c:768
-#, c-format
-msgid "Directory '%s' does not exist."
-msgstr "Директорията \"%s\" не съществува."
+#: ../../WINGs/wfilepanel.c:712
+#, fuzzy
+msgid "directory"
+msgstr "Създаване на директория"
 
-#: ../../WINGs/wfilepanel.c:771
-#, c-format
-msgid "Directory '%s' is not empty."
-msgstr "Директорията \"%s\" не е празна."
+#: ../../WINGs/wfilepanel.c:712
+msgid "file"
+msgstr ""
 
-#: ../../WINGs/wfilepanel.c:774
-#, c-format
-msgid "Directory '%s' is busy."
-msgstr "Директорията \"%s е заета."
+#: ../../WINGs/wfilepanel.c:719
+#, fuzzy, c-format
+msgid "Removing %s failed: %s"
+msgstr "open (%s) не успя"
 
-#: ../../WINGs/wfilepanel.c:787
-#, c-format
-msgid "'%s' is a directory."
-msgstr "\"%s\" е директория."
-
-#: ../../WINGs/wfilepanel.c:829
+#: ../../WINGs/wfilepanel.c:751
 #, c-format
 msgid "An error occurred browsing '%s'."
 msgstr "Настъпи грешка при показване на \"%s\"."
 
-#: ../../WINGs/wfilepanel.c:833
+#: ../../WINGs/wfilepanel.c:754
 #, c-format
 msgid "'%s' is not a directory."
 msgstr "\"%s\" не е директория."
 
-#: ../../WINGs/wfilepanel.c:970
+#: ../../WINGs/wfilepanel.c:883
 msgid "File does not exist."
 msgstr "Файлът не съществува."
 
-#: ../../WINGs/wfont.c:129
-#, c-format
-msgid "the following character sets are missing in %s:"
-msgstr "в %s липсват следните кодирания:"
-
-#: ../../WINGs/wfont.c:136
-#, c-format
-msgid ""
-"the string \"%s\" will be used in place of any characters from those sets."
-msgstr "Вместо кой да е символ от тези кодирания ще се използва низът \"%s\"."
-
-#: ../../WINGs/wfont.c:300 ../../WINGs/wfont.c:336
-#, c-format
-msgid "could not load font set %s. Trying fixed."
-msgstr "не може да се зареди шрифтова комбинация %s. Опит за шрифт fixed."
-
-#: ../../WINGs/wfont.c:306 ../../WINGs/wfont.c:342
-#, c-format
-msgid "could not load font %s. Trying fixed."
+#: ../../WINGs/wfont.c:43
+#, fuzzy, c-format
+msgid "invalid font: %s. Trying '%s'"
 msgstr "не може да се зареди шрифт %s. Опит за шрифт fixed."
 
-#: ../../WINGs/wfont.c:310 ../../WINGs/wfont.c:346
-msgid "could not load fixed font!"
+#: ../../WINGs/wfont.c:270 ../../WINGs/wfont.c:288
+#, fuzzy, c-format
+msgid "could not load font: %s."
 msgstr "не може да се зареди шрифтът fixed!"
 
-#: ../../WINGs/wfont.c:441
-#, c-format
-msgid "font description %s is too large."
-msgstr "шрифтовото описание %s е твърде дълго."
+#. WMSetWidgetBackgroundColor(panel->win, WMWhiteColor(scr));
+#: ../../WINGs/wfontpanel.c:184
+msgid "Font Panel"
+msgstr ""
 
-#: ../../WINGs/wfontpanel.c:205
-msgid "Test!!!"
-msgstr "Проба!!! Test!!!"
+#: ../../WINGs/wfontpanel.c:220
+msgid "The quick brown fox jumps over the lazy dog"
+msgstr ""
 
-#: ../../WINGs/wfontpanel.c:211
+#: ../../WINGs/wfontpanel.c:226
 msgid "Family"
 msgstr "Гарнитура"
 
-#: ../../WINGs/wfontpanel.c:222
+#: ../../WINGs/wfontpanel.c:237
 msgid "Typeface"
 msgstr "Стил"
 
-#: ../../WINGs/wfontpanel.c:233
+#: ../../WINGs/wfontpanel.c:248
 msgid "Size"
 msgstr "Размер"
 
-#: ../../WINGs/wfontpanel.c:252
+#: ../../WINGs/wfontpanel.c:267
 msgid "Set"
 msgstr "Установи"
 
-#: ../../WINGs/wfontpanel.c:257
+#: ../../WINGs/wfontpanel.c:273
 msgid "Revert"
 msgstr "Предишното"
 
-#: ../../WINGs/wfontpanel.c:709
-msgid "Could not retrieve font list"
-msgstr "Не може да се получи списъка от шрифтове"
+#: ../../WINGs/wfontpanel.c:532
+#, fuzzy
+msgid "Could not init font config library\n"
+msgstr "Не може да се създаде конфигурационна директория за ColorPanel"
 
-#: ../../WINGs/wfontpanel.c:721
-#, c-format
-msgid "font name %s is longer than 256, which is invalid."
-msgstr "името на шрифта %s е по-дълго от 256 символа, което е недопустимо."
-
-#: ../../WINGs/wfontpanel.c:868
-msgid "Roman"
-msgstr "Изправен"
-
-#: ../../WINGs/wfontpanel.c:871
-msgid "Italic"
-msgstr "Курсив"
-
-#: ../../WINGs/wfontpanel.c:873
-msgid "Oblique"
-msgstr "Наклонен"
-
-#: ../../WINGs/wfontpanel.c:875
-msgid "Rev Italic"
-msgstr "Обратен курсив"
-
-#: ../../WINGs/wfontpanel.c:877
-msgid "Rev Oblique"
-msgstr "Обратно наклонен"
-
-#: ../../WINGs/wfontpanel.c:883
-msgid "Normal"
-msgstr "Нормален"
-
-#: ../../WINGs/widgets.c:415
+#: ../../WINGs/widgets.c:447
 #, c-format
 msgid "WINGs: could not load widget images file: %s"
 msgstr "WINGs: не може да се зареди изображението %s на библиотеката."
 
-#: ../../WINGs/widgets.c:763
+#: ../../WINGs/widgets.c:543
+#, fuzzy, c-format
+msgid "WINGs: could not open display %s"
+msgstr "WINGs: директорията %s не може да се отвори\n"
+
+#: ../../WINGs/widgets.c:772
 msgid ""
 "could not load any fonts. Make sure your font installation and locale "
 "settings are correct."
-msgstr "не може да се зареди никакъв шрифт. Убедете се, че имате правилно инсталирани шрифтове и посочен езиков локал."
+msgstr ""
+"не може да се зареди никакъв шрифт. Убедете се, че имате правилно "
+"инсталирани шрифтове и посочен езиков локал."
 
-#: ../../WINGs/wruler.c:189
+#: ../../WINGs/winputmethod.c:65
+msgid "could not add destroy callback for XIM input method"
+msgstr ""
+
+#: ../../WINGs/wruler.c:175
 msgid "0   inches"
 msgstr "0   цола"
+
+#: ../../WINGs/wtextfield.c:494
+msgid "only left alignment is supported in textfields"
+msgstr ""
+
+#: ../../WINGs/wwindow.c:160
+msgid "window title conversion error... using STRING encoding"
+msgstr ""
+
+#: ../../WINGs/wwindow.c:181
+msgid "icon title conversion error... using STRING encoding"
+msgstr ""
+
+#~ msgid "Bad address-service-protocol combination"
+#~ msgstr "Неправилна комбинация адрес-услуга-протокол"
+
+#, c-format
+#~ msgid "Unknown error %d"
+#~ msgstr "Непозната грешка %d"
+
+#, c-format
+#~ msgid "Error %d"
+#~ msgstr "Грешка %d"
+
+#~ msgid "Cannot get current host name"
+#~ msgstr "Не може да се получи името на хоста"
+
+#, c-format
+#~ msgid "Write error on file %s"
+#~ msgstr "Грешка при запис във файл %s"
+
+#~ msgid "Permission denied."
+#~ msgstr "Отказан достъп"
+
+#, c-format
+#~ msgid "'%s' already exists."
+#~ msgstr "вече съществува \"%s\"."
+
+#~ msgid "Path does not exist."
+#~ msgstr "Пътят не съществува."
+
+#, c-format
+#~ msgid "'%s' does not exist."
+#~ msgstr "Не съществува \"%s\"."
+
+#~ msgid "Insufficient memory available."
+#~ msgstr "Не е достъпна достатъчно памет."
+
+#, c-format
+#~ msgid "'%s' is on a read-only filesystem."
+#~ msgstr "\"%s\" се намира във файлова система с достъп само за четене."
+
+#, c-format
+#~ msgid "Delete directory %s ?"
+#~ msgstr "Да се изтрие ли директорията %s?"
+
+#, c-format
+#~ msgid "Directory '%s' does not exist."
+#~ msgstr "Директорията \"%s\" не съществува."
+
+#, c-format
+#~ msgid "Directory '%s' is not empty."
+#~ msgstr "Директорията \"%s\" не е празна."
+
+#, c-format
+#~ msgid "Directory '%s' is busy."
+#~ msgstr "Директорията \"%s е заета."
+
+#, c-format
+#~ msgid "'%s' is a directory."
+#~ msgstr "\"%s\" е директория."
+
+#, c-format
+#~ msgid "the following character sets are missing in %s:"
+#~ msgstr "в %s липсват следните кодирания:"
+
+#, c-format
+#~ msgid ""
+#~ "the string \"%s\" will be used in place of any characters from those sets."
+#~ msgstr ""
+#~ "Вместо кой да е символ от тези кодирания ще се използва низът \"%s\"."
+
+#, c-format
+#~ msgid "could not load font set %s. Trying fixed."
+#~ msgstr "не може да се зареди шрифтова комбинация %s. Опит за шрифт fixed."
+
+#, c-format
+#~ msgid "font description %s is too large."
+#~ msgstr "шрифтовото описание %s е твърде дълго."
+
+#~ msgid "Test!!!"
+#~ msgstr "Проба!!! Test!!!"
+
+#~ msgid "Could not retrieve font list"
+#~ msgstr "Не може да се получи списъка от шрифтове"
+
+#, c-format
+#~ msgid "font name %s is longer than 256, which is invalid."
+#~ msgstr "името на шрифта %s е по-дълго от 256 символа, което е недопустимо."
+
+#~ msgid "Roman"
+#~ msgstr "Изправен"
+
+#~ msgid "Italic"
+#~ msgstr "Курсив"
+
+#~ msgid "Oblique"
+#~ msgstr "Наклонен"
+
+#~ msgid "Rev Italic"
+#~ msgstr "Обратен курсив"
+
+#~ msgid "Rev Oblique"
+#~ msgstr "Обратно наклонен"
+
+#~ msgid "Normal"
+#~ msgstr "Нормален"

@@ -1,0 +1,818 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WindowMaker 0.95.9\n"
+"Report-Msgid-Bugs-To: wmaker-dev@googlegroups.com\n"
+"POT-Creation-Date: 2022-08-11 22:56-0700\n"
+"PO-Revision-Date: 2022-08-11 22:59-0700\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../WINGs/error.c:106
+msgid "fatal: "
+msgstr ""
+
+#: ../../WINGs/error.c:112
+msgid "error: "
+msgstr ""
+
+#: ../../WINGs/error.c:118
+msgid "warning: "
+msgstr ""
+
+#: ../../WINGs/findfile.c:63
+#, c-format
+msgid "could not get password entry for UID %i"
+msgstr ""
+
+#: ../../WINGs/findfile.c:93
+#, c-format
+msgid "could not get password entry for user %s"
+msgstr ""
+
+#: ../../WINGs/findfile.c:212
+#, c-format
+msgid "could not expand %s"
+msgstr ""
+
+#: ../../WINGs/findfile.c:441
+#, c-format
+msgid "Could not open input file \"%s\": %s"
+msgstr ""
+
+#: ../../WINGs/findfile.c:457
+#, c-format
+msgid "Could not create target file \"%s\": %s"
+msgstr ""
+
+#: ../../WINGs/findfile.c:465
+msgid "could not allocate memory for the copy buffer"
+msgstr ""
+
+#: ../../WINGs/findfile.c:482
+#, c-format
+msgid "could not read from file \"%s\": %s"
+msgstr ""
+
+#: ../../WINGs/findfile.c:497
+#, c-format
+msgid "could not write data to file \"%s\": %s"
+msgstr ""
+
+#: ../../WINGs/findfile.c:509
+#, c-format
+msgid "could not set permission 0%03o on file \"%s\": %s"
+msgstr ""
+
+#: ../../WINGs/findfile.c:513
+#, c-format
+msgid "could not close the file \"%s\": %s"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:110
+#, c-format
+msgid "   included from file \"%s\" at line %d"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:142
+#, c-format
+msgid "missing #endif to match #%s at line %d"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:200
+msgid "multiple SHORTCUT definition not valid"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:253
+msgid "premature end of file while expecting a new line after '\\'"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:279
+#, c-format
+msgid "reached end of file while searching '*/' for comment started at line %d"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:344
+msgid "missing closing double-quote before end-of-line"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:362
+msgid "missing closing simple-quote before end-of-line"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:380
+msgid "too many nested macro expansions, breaking loop"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:439
+#, c-format
+msgid "unknown directive '#%s'"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:444
+#, c-format
+msgid "extra text after '#' command is ignored: \"%.16s...\""
+msgstr ""
+
+#: ../../WINGs/menuparser.c:459
+msgid "no file name found for #include"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:471
+msgid "file name must be enclosed in brackets or double-quotes for #define"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:485
+#, c-format
+msgid "missing closing '%c' in filename specification"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:503
+msgid "too many nested #include's"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:568
+#, c-format
+msgid "could not find file \"%s\" for #include"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:589
+#, c-format
+msgid "missing macro name argument to #%s"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:600
+msgid "too many nested #if sequences"
+msgstr ""
+
+#: ../../WINGs/menuparser.c:626 ../../WINGs/menuparser.c:643
+#, c-format
+msgid "found #%s but has no matching #if"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:166
+msgid "no macro name found for #define"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:187
+#, c-format
+msgid "premature end of file while reading arg-list for macro \"%s\""
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:194
+#, c-format
+msgid "too many parameters for macro \"%s\" definition"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:209
+#, c-format
+msgid ""
+"invalid character '%c' in arg-list for macro \"%s\" while expecting "
+"parameter name"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:220
+#, c-format
+msgid ""
+"invalid character '%c' in arg-list for macro \"%s\" while expecting ',' or "
+"')'"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:253
+#, c-format
+msgid "macro \"%s\" already defined, ignoring redefinition"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:346
+#, c-format
+msgid "more content than supported for the macro \"%s\""
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:455
+#, c-format
+msgid "expansion for macro \"%s\" too big, line truncated"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:467
+#, c-format
+msgid "macro \"%s\" needs parenthesis for arguments"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:498
+msgid "missing closing quote or double-quote before end-of-line"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:521
+#, c-format
+msgid "too many arguments for macro \"%s\", expected only %d"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:530
+#, c-format
+msgid "premature end of line while searching for arguments to macro \"%s\""
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:536
+#, c-format
+msgid "not enough arguments for macro \"%s\", expected %d but got only %d"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:541
+#, c-format
+msgid "too much data in parameter list of macro \"%s\", truncated"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:561
+#, c-format
+msgid "size of value for macro '%s' is too big, truncated"
+msgstr ""
+
+#: ../../WINGs/menuparser_macros.c:642 ../../WINGs/menuparser_macros.c:668
+#, c-format
+msgid "could not determine %s"
+msgstr ""
+
+#: ../../WINGs/proplist.c:78
+#, c-format
+msgid "syntax error in %s %s, line %i: %s"
+msgstr ""
+
+#: ../../WINGs/proplist.c:134
+msgid "Only string or data is supported for a proplist dictionary key"
+msgstr ""
+
+#: ../../WINGs/proplist.c:167 ../../WINGs/proplist.c:217
+#: ../../WINGs/proplist.c:382 ../../WINGs/proplist.c:458
+#: ../../WINGs/proplist.c:1048 ../../WINGs/proplist.c:1098
+#: ../../WINGs/proplist.c:1246 ../../WINGs/proplist.c:1326
+#: ../../WINGs/proplist.c:1431 ../../WINGs/proplist.c:1475
+msgid "Used proplist functions on non-WMPropLists objects"
+msgstr ""
+
+#: ../../WINGs/proplist.c:635
+msgid "unterminated PropList string"
+msgstr ""
+
+#: ../../WINGs/proplist.c:673
+msgid "unterminated PropList data"
+msgstr ""
+
+#: ../../WINGs/proplist.c:681
+msgid "unterminated PropList data (missing hexdigit)"
+msgstr ""
+
+#: ../../WINGs/proplist.c:693 ../../WINGs/proplist.c:698
+msgid "non hexdigit character in PropList data"
+msgstr ""
+
+#: ../../WINGs/proplist.c:730
+msgid "unterminated PropList array"
+msgstr ""
+
+#: ../../WINGs/proplist.c:738
+msgid "missing or unterminated PropList array"
+msgstr ""
+
+#: ../../WINGs/proplist.c:748
+msgid "could not get PropList array element"
+msgstr ""
+
+#: ../../WINGs/proplist.c:775
+msgid "unterminated PropList dictionary"
+msgstr ""
+
+#: ../../WINGs/proplist.c:792
+msgid "missing PropList dictionary key"
+msgstr ""
+
+#: ../../WINGs/proplist.c:794
+msgid "missing PropList dictionary entry key or unterminated dictionary"
+msgstr ""
+
+#: ../../WINGs/proplist.c:802
+msgid "error parsing PropList dictionary key"
+msgstr ""
+
+#: ../../WINGs/proplist.c:810
+msgid "missing = in PropList dictionary entry"
+msgstr ""
+
+#: ../../WINGs/proplist.c:818
+msgid "error parsing PropList dictionary entry value"
+msgstr ""
+
+#: ../../WINGs/proplist.c:826
+msgid "missing ; in PropList dictionary entry"
+msgstr ""
+
+#: ../../WINGs/proplist.c:885
+msgid ""
+"was expecting a string, data, array or dictionary. If it's a string, try "
+"enclosing it with \"."
+msgstr ""
+
+#: ../../WINGs/proplist.c:888
+msgid "Comments are not allowed inside WindowMaker owned domain files."
+msgstr ""
+
+#: ../../WINGs/proplist.c:1495 ../../WINGs/proplist.c:1560
+#: ../../WINGs/proplist.c:1624
+msgid "extra data after end of property list"
+msgstr ""
+
+#: ../../WINGs/proplist.c:1535
+#, c-format
+msgid "could not get size for file '%s'"
+msgstr ""
+
+#: ../../WINGs/proplist.c:1543
+#, c-format
+msgid "error reading from file '%s'"
+msgstr ""
+
+#: ../../WINGs/proplist.c:1590
+#, c-format
+msgid "%s:could not open menu file"
+msgstr ""
+
+#: ../../WINGs/proplist.c:1672
+#, c-format
+msgid "mkstemp (%s) failed"
+msgstr ""
+
+#: ../../WINGs/proplist.c:1682
+#, c-format
+msgid "mktemp (%s) failed"
+msgstr ""
+
+#: ../../WINGs/proplist.c:1689
+#, c-format
+msgid "open (%s) failed"
+msgstr ""
+
+#: ../../WINGs/proplist.c:1696
+#, c-format
+msgid "writing to file: %s failed"
+msgstr ""
+
+#: ../../WINGs/proplist.c:1705
+#, c-format
+msgid "fclose (%s) failed"
+msgstr ""
+
+#: ../../WINGs/proplist.c:1713
+#, c-format
+msgid "rename ('%s' to '%s') failed"
+msgstr ""
+
+#: ../../WINGs/proplist.c:1784
+#, c-format
+msgid "Could not create component %s"
+msgstr ""
+
+#: ../../WINGs/userdefaults.c:72
+msgid "variable WMAKER_USER_ROOT defined with invalid path, not used"
+msgstr ""
+
+#. something happened with the file. just overwrite it
+#: ../../WINGs/userdefaults.c:207 ../../WINGs/userdefaults.c:222
+#, c-format
+msgid "cannot read domain from file '%s' when syncing"
+msgstr ""
+
+#: ../../WINGs/dragcommon.c:60
+#, c-format
+msgid "unknown XDND action %s"
+msgstr ""
+
+#: ../../WINGs/dragcommon.c:142
+#, c-format
+msgid "target %lu for XDND message no longer exists"
+msgstr ""
+
+#: ../../WINGs/dragcommon.c:220
+#, c-format
+msgid "unsupported version %i for XDND enter message"
+msgstr ""
+
+#: ../../WINGs/dragsource.c:163
+msgid "XDND selection lost during drag operation..."
+msgstr ""
+
+#: ../../WINGs/dragsource.c:758
+msgid "could not get XDND version for target of drop"
+msgstr ""
+
+#: ../../WINGs/dragsource.c:774
+msgid "could not get ownership of XDND selection"
+msgstr ""
+
+#: ../../WINGs/dragsource.c:1070
+msgid "delay for drag destination response expired"
+msgstr ""
+
+#: ../../WINGs/wcolor.c:204 ../../WINGs/wcolor.c:214 ../../WINGs/wcolor.c:250
+#: ../../WINGs/wcolor.c:288
+#, c-format
+msgid "could not allocate %s color"
+msgstr ""
+
+#: ../../WINGs/wcolor.c:204
+msgid "white"
+msgstr ""
+
+#: ../../WINGs/wcolor.c:214
+msgid "black"
+msgstr ""
+
+#: ../../WINGs/wcolor.c:250
+msgid "gray"
+msgstr ""
+
+#: ../../WINGs/wcolor.c:288
+msgid "dark gray"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:390
+msgid "Colors"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:565 ../../WINGs/wcolorpanel.c:2719
+msgid "Brightness"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:567 ../../WINGs/wcolorpanel.c:641
+#: ../../WINGs/wcolorpanel.c:672 ../../WINGs/wcolorpanel.c:703
+#: ../../WINGs/wcolorpanel.c:778 ../../WINGs/wcolorpanel.c:809
+#: ../../WINGs/wcolorpanel.c:841 ../../WINGs/wcolorpanel.c:874
+#: ../../WINGs/wcolorpanel.c:2013 ../../WINGs/wcolorpanel.c:2721
+#: ../../WINGs/wcolorpanel.c:2755 ../../WINGs/wcolorpanel.c:2789
+msgid "Color Panel: Could not allocate memory"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:639
+msgid "Red"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:670
+msgid "Green"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:701
+msgid "Blue"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:715
+msgid "Decimal"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:723
+msgid "Hexadecimal"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:776
+msgid "Cyan"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:807
+msgid "Magenta"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:839
+msgid "Yellow"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:872
+msgid "Black"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:947
+msgid "Spectrum"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:973
+msgid "Palette"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:978
+msgid "New from File..."
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:979 ../../WINGs/wcolorpanel.c:1024
+#: ../../WINGs/wcolorpanel.c:1039
+msgid "Rename..."
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:980 ../../WINGs/wcolorpanel.c:1025
+#: ../../WINGs/wcolorpanel.c:1040 ../../WINGs/wcolorpanel.c:3179
+msgid "Remove"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:981
+msgid "Copy"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:982
+msgid "New from Clipboard"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:1001
+msgid "X11-Colors"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:1018
+msgid "Color"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:1023
+msgid "Add..."
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:1033
+msgid "List"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:1038
+msgid "New..."
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:1167
+#, c-format
+msgid ""
+"Color Panel: Could not create directory %s needed to store configurations"
+msgstr ""
+
+#. Delete the file, it doesn't belong here
+#: ../../WINGs/wcolorpanel.c:1173 ../../WINGs/wcolorpanel.c:3072
+#: ../../WINGs/wcolorpanel.c:3076
+msgid "File Error"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:1174
+msgid "Could not create ColorPanel configuration directory"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:1175 ../../WINGs/wcolorpanel.c:3073
+#: ../../WINGs/wcolorpanel.c:3078 ../../WINGs/wcolorpanel.c:3103
+#: ../../WINGs/wfilepanel.c:227 ../../WINGs/wfilepanel.c:596
+#: ../../WINGs/wfilepanel.c:611 ../../WINGs/wfilepanel.c:715
+#: ../../WINGs/wfilepanel.c:883 ../../WINGs/wfontpanel.c:532
+msgid "OK"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:1181
+msgid "Color Panel: Could not find file"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:1377 ../../WINGs/wcolorpanel.c:1438
+#: ../../WINGs/wcolorpanel.c:1498
+msgid "Color Panel: X failed request"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:2753
+msgid "Saturation"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:2787
+msgid "Hue"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3011
+msgid "Open Palette"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3073
+msgid "Invalid file format !"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3075
+#, c-format
+msgid "can't remove file %s"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3077
+msgid "Couldn't remove file from Configuration Directory !"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3102
+msgid "Rename"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3102
+msgid "Rename palette to:"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3103 ../../WINGs/wfilepanel.c:236
+#: ../../WINGs/wfilepanel.c:611 ../../WINGs/wfilepanel.c:715
+msgid "Cancel"
+msgstr ""
+
+#. Careful, this palette exists already
+#: ../../WINGs/wcolorpanel.c:3119 ../../WINGs/wfilepanel.c:715
+msgid "Warning"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3120
+msgid ""
+"Palette already exists !\n"
+"\n"
+"Overwrite ?"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3120 ../../WINGs/wcolorpanel.c:3179
+msgid "No"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3120 ../../WINGs/wcolorpanel.c:3179
+msgid "Yes"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3151
+#, c-format
+msgid "Couldn't rename palette %s to %s"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3174
+msgid "This will permanently remove the palette "
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3176
+msgid ""
+".\n"
+"\n"
+"Are you sure you want to remove this palette ?"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3198
+#, c-format
+msgid "Couldn't remove palette %s"
+msgstr ""
+
+#: ../../WINGs/wcolorpanel.c:3501
+msgid "Color Panel: Color unspecified"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:216
+msgid "Name:"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:306 ../../WINGs/wfilepanel.c:364
+msgid "Open"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:322 ../../WINGs/wfilepanel.c:370
+msgid "Save"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:506
+#, c-format
+msgid "WINGs: could not open directory %s\n"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:526
+#, c-format
+msgid "WINGs: could not stat %s\n"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:596 ../../WINGs/wfilepanel.c:883
+#: ../../WINGs/wfontpanel.c:531
+msgid "Error"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:610
+msgid "Create Directory"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:611
+msgid "Enter directory name"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:639
+#, c-format
+msgid "Can not create %s: %s"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:705
+#, c-format
+msgid "Can not find %s: %s"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:711
+#, c-format
+msgid "Delete %s %s?"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:712
+msgid "directory"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:712
+msgid "file"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:719
+#, c-format
+msgid "Removing %s failed: %s"
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:751
+#, c-format
+msgid "An error occurred browsing '%s'."
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:754
+#, c-format
+msgid "'%s' is not a directory."
+msgstr ""
+
+#: ../../WINGs/wfilepanel.c:883
+msgid "File does not exist."
+msgstr ""
+
+#: ../../WINGs/wfont.c:43
+#, c-format
+msgid "invalid font: %s. Trying '%s'"
+msgstr ""
+
+#: ../../WINGs/wfont.c:270 ../../WINGs/wfont.c:288
+#, c-format
+msgid "could not load font: %s."
+msgstr ""
+
+#. WMSetWidgetBackgroundColor(panel->win, WMWhiteColor(scr));
+#: ../../WINGs/wfontpanel.c:184
+msgid "Font Panel"
+msgstr ""
+
+#: ../../WINGs/wfontpanel.c:220
+msgid "The quick brown fox jumps over the lazy dog"
+msgstr ""
+
+#: ../../WINGs/wfontpanel.c:226
+msgid "Family"
+msgstr ""
+
+#: ../../WINGs/wfontpanel.c:237
+msgid "Typeface"
+msgstr ""
+
+#: ../../WINGs/wfontpanel.c:248
+msgid "Size"
+msgstr ""
+
+#: ../../WINGs/wfontpanel.c:267
+msgid "Set"
+msgstr ""
+
+#: ../../WINGs/wfontpanel.c:273
+msgid "Revert"
+msgstr ""
+
+#: ../../WINGs/wfontpanel.c:532
+msgid "Could not init font config library\n"
+msgstr ""
+
+#: ../../WINGs/widgets.c:447
+#, c-format
+msgid "WINGs: could not load widget images file: %s"
+msgstr ""
+
+#: ../../WINGs/widgets.c:543
+#, c-format
+msgid "WINGs: could not open display %s"
+msgstr ""
+
+#: ../../WINGs/widgets.c:772
+msgid ""
+"could not load any fonts. Make sure your font installation and locale "
+"settings are correct."
+msgstr ""
+
+#: ../../WINGs/winputmethod.c:65
+msgid "could not add destroy callback for XIM input method"
+msgstr ""
+
+#: ../../WINGs/wruler.c:175
+msgid "0   inches"
+msgstr ""
+
+#: ../../WINGs/wtextfield.c:494
+msgid "only left alignment is supported in textfields"
+msgstr ""
+
+#: ../../WINGs/wwindow.c:160
+msgid "window title conversion error... using STRING encoding"
+msgstr ""
+
+#: ../../WINGs/wwindow.c:181
+msgid "icon title conversion error... using STRING encoding"
+msgstr ""

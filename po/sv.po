@@ -3,476 +3,2202 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: WindowMaker 0.65.1\n"
-"PO-Revision-Date: 1997-06-02 18:29:09-0300\n"
+"Project-Id-Version: WindowMaker 0.95.9\n"
+"Report-Msgid-Bugs-To: wmaker-dev@googlegroups.com\n"
+"POT-Creation-Date: 2022-08-11 22:57-0700\n"
+"PO-Revision-Date: 2022-08-11 23:00-0700\n"
 "Last-Translator: John <forgoil@rsn.hk-r.se>\n"
 "Language-Team: Swedish \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: ../main.c:147
-msgid "Restart failed!!!"
-msgstr "Omstart misslyckades!!!"
+#: ../src/actions.c:1268
+#, c-format
+msgid "window \"%s\" has a severely broken WM_TRANSIENT_FOR hint"
+msgstr ""
 
-#: ../main.c:162
+#: ../src/actions.c:1378
+#, c-format
+msgid "creation of mini-preview failed for window \"%s\""
+msgstr ""
+
+#: ../src/appicon.c:543 ../src/dialog.c:595 ../src/dock.c:3371
+#: ../src/dockedapp.c:173 ../src/main.c:288 ../src/rootmenu.c:1682
+#: ../src/winspector.c:476 ../src/winspector.c:492 ../src/workspace.c:149
+msgid "Error"
+msgstr "Fel"
+
+#: ../src/appicon.c:544
+#, fuzzy
+msgid "Could not open specified icon file"
+msgstr "kunde inte öppna konfigurationsfilen: \"%s\""
+
+#: ../src/appicon.c:545 ../src/dialog.c:435 ../src/dialog.c:499
+#: ../src/dialog.c:595 ../src/dialog.c:1014 ../src/dialog.c:1694
+#: ../src/dock.c:452 ../src/dock.c:459 ../src/dock.c:506 ../src/dock.c:3371
+#: ../src/dock.c:4502 ../src/dockedapp.c:174 ../src/dockedapp.c:365
+#: ../src/main.c:288 ../src/rootmenu.c:1685 ../src/winspector.c:476
+#: ../src/winspector.c:492 ../src/winspector.c:825 ../src/workspace.c:149
+#, fuzzy
+msgid "OK"
+msgstr "OK "
+
+#: ../src/appicon.c:575 ../src/dock.c:229
+msgid ""
+" will be forcibly closed.\n"
+"Any unsaved changes will be lost.\n"
+"Please confirm."
+msgstr ""
+
+#: ../src/appicon.c:582 ../src/dock.c:247 ../src/winmenu.c:253
+msgid "Kill Application"
+msgstr ""
+
+#: ../src/appicon.c:583 ../src/dock.c:248 ../src/winmenu.c:256
+msgid "Yes"
+msgstr ""
+
+#: ../src/appicon.c:583 ../src/dock.c:248 ../src/winmenu.c:256
+msgid "No"
+msgstr ""
+
+#: ../src/appicon.c:608 ../src/dock.c:1278 ../src/dock.c:3552
+msgid "Unhide Here"
+msgstr ""
+
+#: ../src/appicon.c:609 ../src/appicon.c:633 ../src/dock.c:1280
+#: ../src/dock.c:1282 ../src/dock.c:3564 ../src/winmenu.c:88
+msgid "Hide"
+msgstr "Gömma"
+
+#: ../src/appicon.c:610 ../src/dock.c:1276 ../src/winmenu.c:94
+msgid "Launch"
+msgstr ""
+
+#: ../src/appicon.c:611
+msgid "Set Icon..."
+msgstr ""
+
+#: ../src/appicon.c:612 ../src/dock.c:1286 ../src/dock.c:1288
+#: ../src/dock.c:3582 ../src/rootmenu.c:232 ../src/winmenu.c:96
+msgid "Kill"
+msgstr "Döda"
+
+#: ../src/appicon.c:631 ../src/dock.c:3562
+msgid "Unhide"
+msgstr ""
+
+#: ../src/appmenu.c:94 ../src/appmenu.c:110 ../src/appmenu.c:126
+#: ../src/appmenu.c:136 ../src/appmenu.c:173 ../src/appmenu.c:195
+#, c-format
+msgid "appmenu: bad menu entry \"%s\" in window %lx"
+msgstr ""
+
+#: ../src/appmenu.c:98
+#, c-format
+msgid "appmenu: menu command size exceeded in window %lx"
+msgstr ""
+
+#: ../src/appmenu.c:144 ../src/appmenu.c:154 ../src/appmenu.c:187
+#, c-format
+msgid "appmenu: out of memory creating menu for window %lx"
+msgstr ""
+
+#: ../src/appmenu.c:219
+#, c-format
+msgid "appmenu: unknown version of WMMenu in window %lx: %s"
+msgstr ""
+
+#: ../src/defaults.c:873
+#, c-format
+msgid "Domain %s (%s) of global defaults database is corrupted!"
+msgstr ""
+
+#: ../src/defaults.c:877
+#, fuzzy, c-format
+msgid "could not load domain %s from global defaults database"
+msgstr "kunde inte ladda någon användbar teckenuppsättning"
+
+#: ../src/defaults.c:922 ../src/defaults.c:936
+#, fuzzy, c-format
+msgid "invalid global menu file %s"
+msgstr "%s: felaktig palettstorlek på rad \"%s\""
+
+#: ../src/defaults.c:971 ../src/defaults.c:1050 ../src/defaults.c:1089
+#: ../src/defaults.c:1130
+#, c-format
+msgid "Domain %s (%s) of defaults database is corrupted!"
+msgstr ""
+
+#: ../src/defaults.c:975 ../src/defaults.c:1072 ../src/defaults.c:1116
+#: ../src/defaults.c:1140
+#, fuzzy, c-format
+msgid "could not load domain %s from user defaults database"
+msgstr "kunde inte ladda någon användbar teckenuppsättning"
+
+#. --------------------------- Local -----------------------
+#: ../src/defaults.c:1308 ../src/defaults.c:1437 ../src/defaults.c:1532
+#: ../src/defaults.c:1940 ../src/defaults.c:1956 ../src/defaults.c:2001
+#: ../src/defaults.c:2050 ../src/defaults.c:2468 ../src/wdefaults.c:644
+#: ../src/wdefaults.c:673
+#, c-format
+msgid "Wrong option format for key \"%s\". Should be %s."
+msgstr ""
+
+#: ../src/defaults.c:1310 ../src/defaults.c:1386 ../src/defaults.c:1414
+#: ../src/defaults.c:1441 ../src/defaults.c:1453 ../src/defaults.c:1467
+#: ../src/defaults.c:1481 ../src/defaults.c:1536 ../src/defaults.c:1548
+#: ../src/defaults.c:1944 ../src/defaults.c:1961 ../src/defaults.c:1973
+#: ../src/defaults.c:2006 ../src/defaults.c:2022 ../src/defaults.c:2055
+#: ../src/defaults.c:2138 ../src/defaults.c:2473 ../src/defaults.c:2484
+#, c-format
+msgid "using default \"%s\" instead"
+msgstr ""
+
+#: ../src/defaults.c:1337
+#, c-format
+msgid "wrong option value for key \"%s\"; got \"%s\", should be one of %s."
+msgstr ""
+
+#: ../src/defaults.c:1382
+#, fuzzy, c-format
+msgid "can't convert \"%s\" to boolean for key \"%s\""
+msgstr "kan inte konvertera XBM-filen \"%s\" till det interna formatet"
+
+#: ../src/defaults.c:1412
+#, fuzzy, c-format
+msgid "can't convert \"%s\" to integer for key \"%s\""
+msgstr "kan inte konvertera XBM-filen \"%s\" till det interna formatet"
+
+#: ../src/defaults.c:1449
+#, c-format
+msgid "Incorrect number of elements in array for key \"%s\"."
+msgstr ""
+
+#: ../src/defaults.c:1463
+#, c-format
+msgid "Wrong value for key \"%s\". Should be Coordinate."
+msgstr ""
+
+#: ../src/defaults.c:1477
+#, fuzzy, c-format
+msgid "can't convert array to integers for \"%s\"."
+msgstr "kan inte konvertera XBM-filen \"%s\" till det interna formatet"
+
+#: ../src/defaults.c:1654 ../src/defaults.c:1684 ../src/defaults.c:1700
+#: ../src/defaults.c:1729 ../src/defaults.c:1751 ../src/defaults.c:1802
+#: ../src/defaults.c:1841 ../src/defaults.c:1878 ../src/defaults.c:1894
+#, fuzzy, c-format
+msgid "\"%s\" is not a valid color name"
+msgstr "%s: felaktig koordinat \"%s\""
+
+#: ../src/defaults.c:1666 ../src/defaults.c:1717
+msgid "bad number of arguments in gradient specification"
+msgstr ""
+
+#: ../src/defaults.c:1775
+msgid "too few arguments in multicolor gradient specification"
+msgstr ""
+
+#: ../src/defaults.c:1867
+msgid "bad number of arguments in textured gradient specification"
+msgstr ""
+
+#: ../src/defaults.c:1910
+#, c-format
+msgid "bad opacity value for tgradient texture \"%s\". Should be [0..255]"
+msgstr ""
+
+#: ../src/defaults.c:1927
+#, c-format
+msgid "invalid texture type %s"
+msgstr ""
+
+#: ../src/defaults.c:1969
+#, fuzzy, c-format
+msgid "Error in texture specification for key \"%s\""
+msgstr "%s: felaktig fönsterattributspecifikation i \"%s\""
+
+#: ../src/defaults.c:2018
+msgid "Wrong type for workspace background. Should be a texture type."
+msgstr ""
+
+#: ../src/defaults.c:2068
+#, c-format
+msgid "Wrong type for background of workspace %i. Should be a texture."
+msgstr ""
+
+#: ../src/defaults.c:2109
+#, fuzzy
+msgid "could not load any usable font!!!"
+msgstr "kunde inte ladda någon användbart typsnitt"
+
+#: ../src/defaults.c:2134
+#, fuzzy, c-format
+msgid "could not get color for key \"%s\""
+msgstr "felaktig färgspecifikation %s"
+
+#: ../src/defaults.c:2190 ../src/rootmenu.c:469
+#, fuzzy, c-format
+msgid "%s: invalid key modifier \"%s\""
+msgstr "%s: felaktig koordinat \"%s\""
+
+#: ../src/defaults.c:2202
+#, c-format
+msgid "%s:invalid kbd shortcut specification \"%s\""
+msgstr "%s:felaktig tangenbordsgenvägsspecifikation \"%s\""
+
+#: ../src/defaults.c:2208
+#, fuzzy, c-format
+msgid "%s:invalid key in shortcut \"%s\""
+msgstr "%s:felaktig tangenbordsgenvägsspecifikation \"%s\""
+
+#: ../src/defaults.c:2233
+#, c-format
+msgid "%s: modifier key %s is not valid"
+msgstr ""
+
+#: ../src/defaults.c:2340
+#, fuzzy, c-format
+msgid "failed to open bitmap file \"%s\""
+msgstr "kunde inte öppna konfigurationsfilen: \"%s\""
+
+#: ../src/defaults.c:2343
+#, c-format
+msgid "\"%s\" is not a valid bitmap file"
+msgstr ""
+
+#: ../src/defaults.c:2346
+#, c-format
+msgid "out of memory reading bitmap file \"%s\""
+msgstr ""
+
+#: ../src/defaults.c:2384 ../src/defaults.c:2417
+msgid "bad number of arguments in cursor specification"
+msgstr ""
+
+#: ../src/defaults.c:2400
+#, fuzzy, c-format
+msgid "unknown builtin cursor name \"%s\""
+msgstr "%s: okänt attribut på rad \"%s\""
+
+#: ../src/defaults.c:2427 ../src/defaults.c:2439
+#, fuzzy, c-format
+msgid "could not find cursor bitmap file \"%s\""
+msgstr "kunde inte hitta standardikonen \"%s\""
+
+#: ../src/defaults.c:2480
+#, c-format
+msgid "Error in cursor specification for key \"%s\""
+msgstr ""
+
+#: ../src/defaults.c:2605
+#, fuzzy
+msgid "could not render texture for icon background"
+msgstr "kunde inte hitta ikonbakgrunden \"%s\""
+
+#: ../src/defaults.c:3081
+#, fuzzy, c-format
+msgid "Invalid arguments for background \"%s\""
+msgstr "kunde inte hitta ikonbakgrunden \"%s\""
+
+#: ../src/defaults.c:3318 ../src/defaults.c:3389
+#, c-format
+msgid "Invalid arguments for option \"%s\""
+msgstr ""
+
+#: ../src/defaults.c:3324 ../src/defaults.c:3395
+#, fuzzy, c-format
+msgid "Could not find image \"%s\" for option \"%s\""
+msgstr "kunde inte hitta standardikonen \"%s\""
+
+#: ../src/defaults.c:3329 ../src/defaults.c:3403
+#, fuzzy, c-format
+msgid "Could not load image \"%s\" for option \"%s\""
+msgstr "kunde inte ladda XP- fil \"%s\""
+
+#: ../src/defaults.c:3339
+msgid "Invalid split sizes for switch panel back image."
+msgstr ""
+
+#: ../src/defaults.c:3410
+#, c-format
+msgid "Invalid number of arguments for option \"%s\""
+msgstr ""
+
+#: ../src/defaults.c:3426
+#, c-format
+msgid "Value for option \"%s\" must be an array of 7 strings"
+msgstr ""
+
+#: ../src/defaults.c:3440
+#, c-format
+msgid "Invalid argument for option \"%s\" item %d"
+msgstr ""
+
+#: ../src/dialog.c:137
+#, fuzzy
+msgid "Save workspace state"
+msgstr "Arbetsyta"
+
+#: ../src/dialog.c:435 ../src/dialog.c:499 ../src/dialog.c:1021
+#: ../src/dock.c:506 ../src/dock.c:4502 ../src/dockedapp.c:370
+#: ../src/rootmenu.c:189 ../src/rootmenu.c:232
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: ../src/dialog.c:593
+#, fuzzy, c-format
+msgid ""
+"Could not open directory \"%s\":\n"
+"%s"
+msgstr "kunde inte öppna display %s"
+
+#: ../src/dialog.c:609
+#, c-format
+msgid "full path for file \"%s\" in \"%s\" is longer than %d bytes, skipped"
+msgstr ""
+
+#: ../src/dialog.c:646
+#, fuzzy
+msgid "Could not load image file "
+msgstr "kunde inte ladda XP- fil \"%s\""
+
+#: ../src/dialog.c:948
+msgid "Directories"
+msgstr ""
+
+#: ../src/dialog.c:957
+msgid "Icons"
+msgstr ""
+
+#: ../src/dialog.c:990
+msgid "Preview"
+msgstr ""
+
+#: ../src/dialog.c:1003
+msgid "File Name:"
+msgstr ""
+
+#: ../src/dialog.c:1027
+msgid "Choose File"
+msgstr ""
+
+#: ../src/dialog.c:1044
+msgid "Icon Chooser"
+msgstr ""
+
+#: ../src/dialog.c:1261
+#, fuzzy
+msgid "Window Manager for X"
+msgstr "Avsluta fönsterhanterare?"
+
+#: ../src/dialog.c:1263
+#, c-format
+msgid "Version %s"
+msgstr ""
+
+#: ../src/dialog.c:1284
+#, c-format
+msgid "Using visual 0x%x: %s %ibpp "
+msgstr ""
+
+#: ../src/dialog.c:1291
+msgid "(32 thousand colors)\n"
+msgstr ""
+
+#: ../src/dialog.c:1294
+msgid "(64 thousand colors)\n"
+msgstr ""
+
+#: ../src/dialog.c:1298
+msgid "(16 million colors)\n"
+msgstr ""
+
+#: ../src/dialog.c:1301
+#, c-format
+msgid "(%d colors)\n"
+msgstr ""
+
+#: ../src/dialog.c:1311
+#, c-format
+msgid "Total memory allocated: %i kB (in use: %i kB, %d free chunks).\n"
+msgstr ""
+
+#: ../src/dialog.c:1313
+#, c-format
+msgid "Total memory allocated: %i kB (in use: %i kB).\n"
+msgstr ""
+
+#: ../src/dialog.c:1331
+msgid "Image formats: "
+msgstr ""
+
+#: ../src/dialog.c:1341
+msgid ""
+"\n"
+"Additional support for: "
+msgstr ""
+
+#: ../src/dialog.c:1357 ../src/dialog.c:1370
+msgid "\n"
+msgstr ""
+
+#: ../src/dialog.c:1359
+msgid "Solaris "
+msgstr ""
+
+#: ../src/dialog.c:1361
+msgid "Xinerama: "
+msgstr ""
+
+#: ../src/dialog.c:1364
+#, c-format
+msgid "%d head(s) found."
+msgstr ""
+
+#: ../src/dialog.c:1373
+msgid "supported"
+msgstr ""
+
+#: ../src/dialog.c:1375
+msgid "unsupported"
+msgstr ""
+
+#: ../src/dialog.c:1401
+msgid "Info"
+msgstr ""
+
+#: ../src/dialog.c:1484
+msgid ""
+"    Window Maker is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"    Window Maker is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for "
+"more details.\n"
+"\n"
+"    You should have received a copy of the GNU General Public License along "
+"with this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA02110-1301 USA."
+msgstr ""
+
+#: ../src/dialog.c:1504
+msgid "Legal"
+msgstr ""
+
+#: ../src/dialog.c:1620 ../src/monitor.c:56
+msgid "cannot open connection for crashing dialog panel. Aborting."
+msgstr ""
+
+#: ../src/dialog.c:1648
+#, fuzzy
+msgid "Fatal error"
+msgstr " fatalt fel: "
+
+#: ../src/dialog.c:1658
+#, c-format
+msgid "Window Maker received signal %i."
+msgstr ""
+
+#. Comment for the PO file: the %s is an email address
+#: ../src/dialog.c:1666
+#, c-format
+msgid ""
+" This fatal error occurred probably due to a bug. Please fill the included "
+"BUGFORM and report it to %s."
+msgstr ""
+
+#: ../src/dialog.c:1675
+msgid "What do you want to do now?"
+msgstr ""
+
+#: ../src/dialog.c:1681
+msgid "Select action"
+msgstr ""
+
+#: ../src/dialog.c:1682
+msgid "Abort and leave a core file"
+msgstr ""
+
+#: ../src/dialog.c:1683
+msgid "Restart Window Maker"
+msgstr ""
+
+#: ../src/dialog.c:1684
+#, fuzzy
+msgid "Start alternate window manager"
+msgstr "Avsluta fönsterhanterare?"
+
+#: ../src/dock.c:181 ../src/menu.c:1776
+#, c-format
+msgid "Type the name for workspace %i:"
+msgstr ""
+
+#: ../src/dock.c:182 ../src/dock.c:1242 ../src/dock.c:1244 ../src/dock.c:3464
+#: ../src/menu.c:1780
+#, fuzzy
+msgid "Rename Workspace"
+msgstr "Arbetsyta"
+
+#: ../src/dock.c:447 ../src/dock.c:454 ../src/winspector.c:825
+#, fuzzy
+msgid "Warning"
+msgstr " varning: "
+
+#: ../src/dock.c:448
+msgid ""
+"Some icons cannot be made omnipresent. Please make sure that no other icon "
+"is docked in the same positions on the other workspaces and the Clip is not "
+"full in some workspace."
+msgstr ""
+
+#: ../src/dock.c:455
+msgid ""
+"Icon cannot be made omnipresent. Please make sure that no other icon is "
+"docked in the same position on the other workspaces and the Clip is not full "
+"in some workspace."
+msgstr ""
+
+#: ../src/dock.c:504
+#, fuzzy
+msgid "Workspace Clip"
+msgstr "Arbetsyta"
+
+#: ../src/dock.c:504 ../src/dock.c:4500
+msgid "Drawer"
+msgstr ""
+
+#: ../src/dock.c:505
+msgid "All selected icons will be removed!"
+msgstr ""
+
+#. can be: Unselect all icons
+#: ../src/dock.c:547 ../src/dock.c:1256 ../src/dock.c:1258 ../src/dock.c:3502
+msgid "Keep Icon"
+msgstr ""
+
+#: ../src/dock.c:548 ../src/dock.c:2151 ../src/dock.c:2293
+msgid "Type the command used to launch the application"
+msgstr ""
+
+#: ../src/dock.c:940
+#, fuzzy, c-format
+msgid "could not launch application %s"
+msgstr "kunde inte hitta standardikonen \"%s\""
+
+#: ../src/dock.c:986
+#, fuzzy
+msgid "could not create workspace submenu for Clip menu"
+msgstr "kunde inte skapa arbetsytans meny"
+
+#: ../src/dock.c:1043
+#, fuzzy
+msgid "could not create options submenu for Clip menu"
+msgstr "kunde inte skapa arbetsytans meny"
+
+#: ../src/dock.c:1047 ../src/dock.c:1194
+msgid "Keep on Top"
+msgstr ""
+
+#: ../src/dock.c:1052
+msgid "Collapsed"
+msgstr ""
+
+#: ../src/dock.c:1057
+msgid "Autocollapse"
+msgstr ""
+
+#: ../src/dock.c:1062
+msgid "Autoraise"
+msgstr ""
+
+#: ../src/dock.c:1067
+msgid "Autoattract Icons"
+msgstr ""
+
+#: ../src/dock.c:1182
+#, fuzzy
+msgid "could not create options submenu for dock position menu"
+msgstr "kunde inte skapa arbetsytans meny"
+
+#: ../src/dock.c:1186
+msgid "Normal"
+msgstr ""
+
+#: ../src/dock.c:1190
+msgid "Auto raise & lower"
+msgstr ""
+
+#: ../src/dock.c:1218
+msgid "Dock position"
+msgstr ""
+
+#: ../src/dock.c:1224
+msgid "Add a drawer"
+msgstr ""
+
+#: ../src/dock.c:1228
+#, fuzzy
+msgid "Clip Options"
+msgstr "alternativ:"
+
+#. if (type == WM_DRAWER)
+#: ../src/dock.c:1230
+#, fuzzy
+msgid "Drawer options"
+msgstr "alternativ:"
+
+#: ../src/dock.c:1247
+msgid "Selected"
+msgstr ""
+
+#: ../src/dock.c:1252 ../src/dock.c:1254 ../src/dock.c:3492
+msgid "Select All Icons"
+msgstr ""
+
+#: ../src/dock.c:1261 ../src/dock.c:1263 ../src/dock.c:3512
+msgid "Move Icon To"
+msgstr ""
+
+#: ../src/dock.c:1269 ../src/dock.c:1271 ../src/dock.c:3526
+msgid "Remove Icon"
+msgstr ""
+
+#. can be: Remove Icons
+#: ../src/dock.c:1273
+msgid "Attract Icons"
+msgstr ""
+
+#. can be: Unhide
+#: ../src/dock.c:1284
+msgid "Settings..."
+msgstr ""
+
+#: ../src/dock.c:1632 ../src/dock.c:1720
+#, c-format
+msgid "bad value in docked icon state info %s"
+msgstr ""
+
+#: ../src/dock.c:1743
+#, c-format
+msgid "bad value in dock state info:%s"
+msgstr ""
+
+#: ../src/dock.c:1942
+msgid "there are too many icons stored in dock. Ignoring what doesn't fit"
+msgstr ""
+
+#. icon->forced_dock = 1;
+#: ../src/dock.c:2150 ../src/dock.c:2292
+msgid "Dock Icon"
+msgstr ""
+
+#: ../src/dock.c:3369
+#, fuzzy, c-format
+msgid "Could not execute command \"%s\""
+msgstr "kunde inte köra program \"%s\""
+
+#: ../src/dock.c:3470
+msgid "Toggle Omnipresent"
+msgstr ""
+
+#: ../src/dock.c:3475 ../src/winmenu.c:115 ../src/winspector.c:96
+msgid "Omnipresent"
+msgstr ""
+
+#: ../src/dock.c:3490
+msgid "Unselect All Icons"
+msgstr ""
+
+#: ../src/dock.c:3500
+msgid "Keep Icons"
+msgstr ""
+
+#: ../src/dock.c:3510
+msgid "Move Icons To"
+msgstr ""
+
+#: ../src/dock.c:3524
+msgid "Remove Icons"
+msgstr ""
+
+#: ../src/dock.c:3554
+msgid "Bring Here"
+msgstr ""
+
+#: ../src/dock.c:3578
+msgid "Remove drawer"
+msgstr ""
+
+#: ../src/dock.c:4501
+msgid "All icons in this drawer will be detached!"
+msgstr ""
+
+#: ../src/dock.c:4886
+msgid "there are too many icons stored in drawer. Ignoring what doesn't fit"
+msgstr ""
+
+#: ../src/dockedapp.c:95
+#, c-format
+msgid "could not find icon %s, used in a docked application"
+msgstr ""
+
+#: ../src/dockedapp.c:172
+#, fuzzy, c-format
+msgid "Could not open specified icon file: %s"
+msgstr "kunde inte öppna konfigurationsfilen: \"%s\""
+
+#: ../src/dockedapp.c:174
+msgid "Ignore"
+msgstr ""
+
+#: ../src/dockedapp.c:284
+msgid "Start when Window Maker is started"
+msgstr ""
+
+#: ../src/dockedapp.c:289
+msgid "Lock (prevent accidental removal)"
+msgstr ""
+
+#: ../src/dockedapp.c:293
+msgid "Application path and arguments"
+msgstr ""
+
+#: ../src/dockedapp.c:304
+msgid "Command for middle-click launch"
+msgstr ""
+
+#: ../src/dockedapp.c:316
+#, c-format
+msgid "%s will be replaced with current selection"
+msgstr ""
+
+#: ../src/dockedapp.c:320
+msgid "Command for dragged and dropped files"
+msgstr ""
+
+#: ../src/dockedapp.c:332
+#, c-format
+msgid "%d will be replaced with the file name"
+msgstr ""
+
+#: ../src/dockedapp.c:335
+#, fuzzy
+msgid "XDnD support was not compiled in"
+msgstr "kan inte ladda \"%s\": hantering av är inte inkompilerat"
+
+#: ../src/dockedapp.c:343
+msgid "Icon Image"
+msgstr ""
+
+#: ../src/dockedapp.c:354 ../src/winspector.c:1388
+msgid "Browse..."
+msgstr ""
+
+#: ../src/dockedapp.c:412
+msgid "Docked Application Settings"
+msgstr ""
+
+#: ../src/event.c:328
+#, c-format
+msgid "read problem when trying to get INotify event: %s"
+msgstr ""
+
+#: ../src/event.c:341
+msgid ""
+"the defaults database has been deleted! Restart Window Maker to create the "
+"database with the default settings"
+msgstr ""
+
+#: ../src/event.c:350
+msgid ""
+"the unit containing the defaults database has been unmounted. Setting --"
+"static mode. Any changes will not be saved."
+msgstr ""
+
+#: ../src/event.c:361
+msgid "Inotify: Reading config files in defaults database."
+msgstr ""
+
+#. an error has occurred
+#: ../src/event.c:412
+msgid ""
+"select failed. The inotify instance will be closed. Changes to the defaults "
+"database will require a restart to take effect."
+msgstr ""
+
+#: ../src/event.c:1026
+msgid "Got Reconfigure command"
+msgstr ""
+
+#: ../src/event.c:1029
+#, fuzzy, c-format
+msgid "Got unknown command %s"
+msgstr "okänt kommando \"%s\" i menykonfigurationen."
+
+#: ../src/event.c:1857
+#, c-format
+msgid "exec %A(Run,Type command to run:)"
+msgstr ""
+
+#: ../src/event.c:2035
+msgid "another window manager is replacing us!"
+msgstr ""
+
+#: ../src/framewin.c:660 ../src/framewin.c:750 ../src/menu.c:405
+#: ../src/texture.c:454
+#, fuzzy, c-format
+msgid "could not render texture: %s"
+msgstr "kunde inte allokera textur"
+
+#: ../src/framewin.c:683 ../src/framewin.c:693 ../src/framewin.c:709
+#: ../src/framewin.c:720 ../src/framewin.c:727 ../src/framewin.c:733
+#: ../src/icon.c:311 ../src/menu.c:432
+#, c-format
+msgid "error rendering image:%s"
+msgstr ""
+
+#: ../src/framewin.c:778
+#, c-format
+msgid "error rendering image: %s"
+msgstr ""
+
+#: ../src/main.c:227
+msgid "failed to restart Window Maker."
+msgstr ""
+
+#: ../src/main.c:230
+#, fuzzy, c-format
+msgid "could not exec %s"
+msgstr "felaktig färgspecifikation %s"
+
+#: ../src/main.c:252
+#, c-format
+msgid "the display name has an unexpected syntax: \"%s\""
+msgstr ""
+
+#: ../src/main.c:286
+#, fuzzy
+msgid "Could not execute command: "
+msgstr "kunde inte köra program \"%s\""
+
+#: ../src/main.c:421
+#, c-format
 msgid "%s aborted.\n"
 msgstr "%s avbruten.\n"
 
-#: ../main.c:170
-msgid "usage: %s [-options]\n"
+#: ../src/main.c:430
+#, fuzzy, c-format
+msgid "Usage: %s [options]\n"
 msgstr "användning: %s [-alternativ]\n"
 
-#: ../main.c:171
-msgid "options:"
-msgstr "alternativ:"
+#: ../src/main.c:431
+msgid "The Window Maker window manager for the X window system"
+msgstr ""
 
-#: ../main.c:173
-msgid " -nocpp \t\tdisable preprocessing of configuration files"
-msgstr " -nocpp \t\tstäng av preprocessing för konfigurationsfilerna"
-
-#: ../main.c:176
-msgid " -nodock\t\tdo not open the application Dock"
-msgstr " -nodock\t\töppna inte the Dock"
-
-#: ../main.c:178
-msgid " -locale locale\t\tlocale to use"
-msgstr " -locale locale\t\tlocale som skall användas"
-
-#: ../main.c:179
+#: ../src/main.c:433
 msgid " -display host:dpy\tdisplay to use"
 msgstr " -display host:dpy\tdisplay som skall användas"
 
-#: ../main.c:180
-msgid " -version\t\tprint version and exit"
+#: ../src/main.c:435
+msgid " --replace\t\treplace running window manager"
+msgstr ""
+
+#: ../src/main.c:437
+#, fuzzy
+msgid " --no-dock\t\tdo not open the application Dock"
+msgstr " -nodock\t\töppna inte the Dock"
+
+#: ../src/main.c:438
+#, fuzzy
+msgid " --no-clip\t\tdo not open the workspace Clip"
+msgstr " -nodock\t\töppna inte the Dock"
+
+#: ../src/main.c:439
+#, fuzzy
+msgid " --no-autolaunch\tdo not autolaunch applications"
+msgstr " -nodock\t\töppna inte the Dock"
+
+#: ../src/main.c:440
+msgid " --no-drawer\t\tdisable drawers in the dock"
+msgstr ""
+
+#: ../src/main.c:441
+msgid " --dont-restore\t\tdo not restore saved session"
+msgstr ""
+
+#: ../src/main.c:443
+#, fuzzy
+msgid " --locale locale\tlocale to use"
+msgstr " -locale locale\t\tlocale som skall användas"
+
+#: ../src/main.c:445
+msgid " --visual-id visualid\tvisual id of visual to use"
+msgstr ""
+
+#: ../src/main.c:446
+msgid " --static\t\tdo not update or save configurations"
+msgstr ""
+
+#: ../src/main.c:448
+msgid " --no-polling\t\tdo not periodically check for configuration updates"
+msgstr ""
+
+#: ../src/main.c:450
+msgid " --global_defaults_path\tprint the path for default config and exit"
+msgstr ""
+
+#: ../src/main.c:451
+#, fuzzy
+msgid " --version\t\tprint version and exit"
 msgstr " -version\t\tskriv ut version och avsluta"
 
-#: ../main.c:234
-msgid "cannot set locale %s"
-msgstr "kan inte sätta locale %s"
+#: ../src/main.c:452
+msgid " --help\t\t\tshow this message"
+msgstr ""
 
-#: ../main.c:235
-msgid "falling back to C locale"
-msgstr "går tillbaka till C locale"
+#: ../src/main.c:462
+#, fuzzy, c-format
+msgid "could not find user GNUstep directory (%s)."
+msgstr "kunde inte hitta standardikonen \"%s\""
 
-#: ../main.c:263
+#: ../src/main.c:465
+msgid ""
+"There was an error while creating GNUstep directory, please make sure you "
+"have installed Window Maker correctly and run wmaker.inst"
+msgstr ""
+
+#: ../src/main.c:468
+#, c-format
+msgid "%s directory created with default configuration."
+msgstr ""
+
+#: ../src/main.c:487
+msgid ""
+"could not initialise an inotify instance. Changes to the defaults database "
+"will require a restart to take effect. Check your kernel!"
+msgstr ""
+
+#: ../src/main.c:498
+#, c-format
+msgid ""
+"could not add an inotify watch on path %s. Changes to the defaults database "
+"will require a restart to take effect."
+msgstr ""
+
+#: ../src/main.c:521
+#, c-format
+msgid "%s:could not execute initialization script"
+msgstr ""
+
+#: ../src/main.c:539
+#, fuzzy, c-format
+msgid "%s:could not execute exit script"
+msgstr "kunde inte allokera textur"
+
+#: ../src/main.c:585 ../src/main.c:666 ../src/main.c:673 ../src/main.c:680
+#, c-format
+msgid "too few arguments for %s"
+msgstr ""
+
+#: ../src/main.c:634
+#, c-format
+msgid "option \"%s\" is deprecated, please remove it from your script"
+msgstr ""
+
+#: ../src/main.c:684
+#, c-format
+msgid "bad value for visualid: \"%s\""
+msgstr ""
+
+#: ../src/main.c:693
+msgid ""
+"your version of Window Maker was compiled with INotify support, so \"--no-"
+"polling\" has no effect"
+msgstr ""
+
+#: ../src/main.c:699
+#, fuzzy, c-format
+msgid "%s: invalid argument '%s'\n"
+msgstr "%s: felaktig koordinat \"%s\""
+
+#: ../src/main.c:700
+#, c-format
+msgid "Try '%s --help' for more information\n"
+msgstr ""
+
+#: ../src/main.c:743
 msgid "X server does not support locale"
 msgstr "X servern har inte support för locale"
 
-#: ../main.c:266
+#: ../src/main.c:747
 msgid "cannot set locale modifiers"
 msgstr "kan inte sätta locale-modifierare"
 
-#: ../main.c:276
-msgid "could not open display %s"
+#: ../src/main.c:763
+#, fuzzy, c-format
+msgid "could not open display \"%s\""
 msgstr "kunde inte öppna display %s"
 
-#: ../event.c:230
-msgid "stack overflow: too many dead processes"
-msgstr "stacken full: för många döda processer"
+#: ../src/menu.c:2368
+#, c-format
+msgid "bad value in menus state info: %s"
+msgstr ""
 
-#: ../startup.c:137
-msgid "internal X error: %s\n"
-msgstr "internt X-fel: %s\n"
+#: ../src/misc.c:476 ../src/misc.c:481
+msgid "Program Arguments"
+msgstr ""
 
-#: ../startup.c:152
-msgid "got signal %i (%s)\n"
-msgstr "fick signal %i (%s)\n"
+#: ../src/misc.c:477 ../src/misc.c:482
+msgid "Enter command arguments:"
+msgstr ""
 
-#: ../startup.c:154
-msgid "got signal %i\n"
-msgstr "fick signal %i\n"
+#: ../src/misc.c:523
+#, c-format
+msgid "out of memory during expansion of \"%s\""
+msgstr ""
 
-#: ../texture.c:317 ../texture.c:327
-msgid "unsupported visual/depth for gradients"
-msgstr "kan ej hantera gradienter på denna visual/färgdjup"
+#: ../src/misc.c:576 ../src/misc.c:593 ../src/misc.c:610 ../src/misc.c:633
+#: ../src/misc.c:654
+#, c-format
+msgid "out of memory during expansion of '%s' for command \"%s\""
+msgstr ""
 
-#: ../menu.c:231
-msgid "wrealloc() failed while trying to add menu item"
-msgstr "wrealloc() misslyckades vid addering av ett menyval"
+#: ../src/misc.c:647
+msgid "selection not available"
+msgstr ""
 
-#: ../pixmap.c:211
-msgid "could not load mask bitmap file \"%s\". Won't use mask"
-msgstr "kunde inte ladda maskfil \"%s\". Kommer inte att använda masken"
+#: ../src/misc.c:689 ../src/misc.c:695
+#, c-format
+msgid "bad window name value in %s state info"
+msgstr ""
 
-#: ../image.c:183 ../image.c:889 ../pixmap.c:261
-msgid "could not load XPM file \"%s\""
-msgstr "kunde inte ladda XP- fil \"%s\""
+#: ../src/misc.c:922 ../src/misc.c:929 ../src/misc.c:945
+#, c-format
+msgid "%s failed, can't set workspace specific background image (%s)"
+msgstr ""
 
-#: ../pixmap.c:264
-msgid "cannot load \"%s\": XPM support not compiled in"
-msgstr "kan inte ladda \"%s\": hantering av är inte inkompilerat"
+#: ../src/misc.c:957
+#, fuzzy, c-format
+msgid "could not execute \"%s\": %s"
+msgstr "kunde inte köra program \"%s\""
 
-#: ../pixmap.c:271
-msgid "could not load XBM file \"%s\""
-msgstr "kunde inte ladda XBM-fil \"%s\""
+#: ../src/misc.c:965
+#, c-format
+msgid ""
+"could not set close-on-exec flag for bg_helper's communication file handle "
+"(%s)"
+msgstr ""
 
-#: ../image.c:196 ../pixmap.c:275
-msgid "can't identify image file \"%s\""
-msgstr "kan inte identifiera bildfil \"%s\""
+#: ../src/misc.c:1005
+#, fuzzy
+msgid "could not send message to background image helper"
+msgstr "kunde inte hitta ikonbakgrunden \"%s\""
 
-#: ../image.c:200 ../pixmap.c:279
-msgid "unknown image format in \"%s\""
-msgstr "okänt bildformat i \"%s\""
+#: ../src/monitor.c:63
+msgid "trying to start alternate window manager..."
+msgstr ""
 
-#: ../image.c:65 ../image.c:494
-msgid "can't load pixmap file \"%s\". Size too weird"
-msgstr "kan inte ladda pixmap-fil \"%s\". Storleken för underlig"
-
-#: ../image.c:83 ../image.c:746 ../image.c:768
-msgid "virtual memory exhausted during pixmap load. Not fatal..."
-msgstr "slut virtuellt minne vid laddning av pixmap. Inte fatalt..."
-
-#: ../image.c:100 ../image.c:510
-msgid "virtual memory exhausted. Continuing..."
-msgstr "slut virtuellt minne. Fortsätter..."
-
-#: ../image.c:186
-msgid "cannot load \"%s\": XPM format not supported"
-msgstr "kan inte ladda \"%s\": Kan ej hantera XPM-formatet"
-
-#. XPM
-#: ../image.c:191
-msgid "can't convert XBM file \"%s\" to internal format"
-msgstr "kan inte konvertera XBM-filen \"%s\" till det interna formatet"
-
-#: ../image.c:556 ../image.c:562 ../image.c:581
-msgid "virtual memory exhausted during XPM load."
-msgstr "slut virtuellt minne vid laddning av XPM"
-
-#: ../image.c:712 ../image.c:855
-msgid "could not convert image \"%s\" to internal format"
-msgstr "kunde inte konvertera bilden \"%s\" till det interna formatet"
-
-#: ../image.c:901
-msgid "can't load \"%s\": unknown image format"
-msgstr "kan inte ladda \"%s\": okänt bildformat"
-
-#: ../screen.c:83
-msgid "it seems that there already is a window manager running"
+#: ../src/monitor.c:69
+#, fuzzy
+msgid "failed to start alternate window manager. Aborting."
 msgstr "det verkar som en fönsterhanterare redan är igång"
 
-#: ../screen.c:234 ../screen.c:344
-msgid "could not parse color %s"
+#: ../src/monitor.c:98 ../src/monitor.c:101
+msgid "Error respawning Window Maker"
+msgstr ""
+
+#: ../src/monitor.c:108
+msgid "Error during monitoring of Window Maker process."
+msgstr ""
+
+#: ../src/monitor.c:133
+#, c-format
+msgid "Window Maker exited due to a crash (signal %i) and will be restarted."
+msgstr ""
+
+#.
+#. *  1st %s is a function name
+#. *  2nd %s is an email address
+#. *  3rd %s is the name of the operating system
+#.
+#: ../src/osdep_stub.c:23
+#, c-format
+msgid ""
+"%s is not implemented on this platform; tell %s you are running %s release "
+"%s version %s"
+msgstr ""
+
+#: ../src/resources.c:41
+#, fuzzy, c-format
+msgid "could not parse color \"%s\""
 msgstr "felaktig färgspecifikation %s"
 
-#: ../screen.c:289
-msgid "The following character sets are missing:"
-msgstr "Följande teckenuppsättningar saknas:"
+#: ../src/resources.c:45
+#, fuzzy, c-format
+msgid "could not allocate color \"%s\""
+msgstr "felaktig färgspecifikation %s"
 
-#: ../screen.c:293
-msgid "The string \"%s\" will be used in place"
-msgstr "Strängen \"%s\" kommer att användas istället"
-
-#: ../screen.c:295
-msgid "of any characters from those sets."
-msgstr "någon av de tecknena ifrån de uppsättningarna."
-
-#: ../screen.c:298
-msgid "could not create font set %s. Using fixed"
-msgstr "kunde inte skapa typsnitt %s. Använder fixed"
-
-#: ../screen.c:305
-msgid "could not load any usable font set"
-msgstr "kunde inte ladda någon användbar teckenuppsättning"
-
-#: ../screen.c:315
-msgid "could not load font %s. Using fixed"
-msgstr "kunde inte ladda typsnitt %s. Använder fixed"
-
-#: ../screen.c:318
-msgid "could not load any usable font"
-msgstr "kunde inte ladda någon användbart typsnitt"
-
-#: ../screen.c:439
-msgid "Gradient texture not supported for your display (PseudoColor %ibpp)"
-msgstr "Kan ej hantera \"gradient texture\" på denna display (PseudoColor %ibpp)"
-
-#: ../screen.c:442
-msgid "You must enable dithering to be able to use gradients with this display"
-msgstr "Du måste slå på dithering för att kunna använda gradienter med den här displayen"
-
-#: ../screen.c:456
-msgid "Gradient texture available only for PseudoColor and TrueColor displays"
-msgstr "Gradient texture är bara tillgänglig för PseudoColor- och TrueColor-displayer"
-
-#: ../screen.c:478
-msgid "could not allocate texture"
-msgstr "kunde inte allokera textur"
-
-#: ../screen.c:1058
-msgid "colormap size value(s) too large"
-msgstr "färgpalettens storleks värde(n) för stora"
-
-#: ../dialog.c:208 ../rootmenu.c:108
+#: ../src/rootmenu.c:188 ../src/rootmenu.c:189
 msgid "Exit"
 msgstr "Avsluta"
 
-#: ../rootmenu.c:109
+#: ../src/rootmenu.c:189
 msgid "Exit window manager?"
 msgstr "Avsluta fönsterhanterare?"
 
-#: ../rootmenu.c:128
-msgid "Close X session"
+#: ../src/rootmenu.c:230
+#, fuzzy
+msgid "Kill X session"
 msgstr "Stäng X-session"
 
-#: ../rootmenu.c:129
+#: ../src/rootmenu.c:231
+#, fuzzy
 msgid ""
-"Close Window System session?\n"
+"Kill Window System session?\n"
 "(all applications will be closed)"
 msgstr ""
 "Stäng fönstersystems sessionen?\n"
 "(alla applikatoner kommer att stängas)"
 
-#: ../rootmenu.c:217 ../rootmenu.c:314 ../rootmenu.c:496
-msgid "Switch to %i"
-msgstr "Byt till %i"
+#: ../src/rootmenu.c:482
+#, fuzzy, c-format
+msgid "%s:invalid kbd shortcut specification \"%s\" for entry %s"
+msgstr "%s:felaktig tangenbordsgenvägsspecifikation \"%s\""
 
-#: ../rootmenu.c:283
-msgid "out of memory to store menu commands. Nuking it."
-msgstr "inget minne kvar för att spara menykommandon. Bombar det."
+#: ../src/rootmenu.c:490
+#, fuzzy, c-format
+msgid "%s:invalid key in shortcut \"%s\" for entry %s"
+msgstr "%s:felaktig tangenbordsgenvägsspecifikation \"%s\""
 
-#: ../rootmenu.c:303
-msgid "Workspaces"
-msgstr "Arbetsyta"
+#: ../src/rootmenu.c:524
+#, c-format
+msgid "%s: unmatched '\"' in menu file"
+msgstr ""
 
-#: ../rootmenu.c:305
-msgid "could not create Workspace menu"
-msgstr "kunde inte skapa arbetsytans meny"
+#: ../src/rootmenu.c:573
+#, c-format
+msgid "%s: missing command"
+msgstr ""
 
-#: ../rootmenu.c:308
-msgid "New"
-msgstr "Ny"
+#: ../src/rootmenu.c:629
+#, fuzzy, c-format
+msgid "invalid OPEN_MENU specification: %s"
+msgstr "%s:felaktig tangenbordsgenvägsspecifikation \"%s\""
 
-#: ../rootmenu.c:309
-msgid "Destroy Last"
-msgstr "Förstöra sista"
+#: ../src/rootmenu.c:696
+#, fuzzy, c-format
+msgid "%s:could not stat menu"
+msgstr "appmenu:kunde inte skapa meny"
 
-#: ../rootmenu.c:350
-msgid "missing command in menu config: %s"
-msgstr "kommando saknas i menykonfigurationen: %s"
+#: ../src/rootmenu.c:704
+#, fuzzy, c-format
+msgid "%s:could not stat menu:%s"
+msgstr "appmenu:kunde inte skapa meny"
 
-#: ../rootmenu.c:390
-msgid "menu can only have one WORKSPACE_MENU"
-msgstr "menyn kan bara ha en WORKSPACE_MENU (arbetsytemeny)"
+#: ../src/rootmenu.c:720
+#, c-format
+msgid "too many parameters in OPEN_MENU: %s"
+msgstr ""
 
-#: ../rootmenu.c:406
-msgid "unknown command \"%s\" in menu config."
+#: ../src/rootmenu.c:758
+#, fuzzy, c-format
+msgid "invalid OPEN_PLMENU specification: %s"
+msgstr "%s:felaktig tangenbordsgenvägsspecifikation \"%s\""
+
+#: ../src/rootmenu.c:814
+msgid ""
+"There are more than one WORKSPACE_MENU commands in the applications menu. "
+"Only one is allowed."
+msgstr ""
+
+#: ../src/rootmenu.c:845
+msgid ""
+"There are more than one WINDOWS_MENU commands in the applications menu. Only "
+"one is allowed."
+msgstr ""
+
+#: ../src/rootmenu.c:850
+#, fuzzy
+msgid "Window List"
+msgstr "Fönster"
+
+#: ../src/rootmenu.c:877 ../src/rootmenu.c:894 ../src/rootmenu.c:911
+#: ../src/rootmenu.c:919
+#, c-format
+msgid "%s:missing parameter for menu command \"%s\""
+msgstr ""
+
+#: ../src/rootmenu.c:983
+#, fuzzy, c-format
+msgid "%s:unknown command \"%s\" in menu config."
 msgstr "okänt kommando \"%s\" i menykonfigurationen."
 
-#: ../rootmenu.c:410
-msgid "syntax error in menu config. END declaration missing"
+#: ../src/rootmenu.c:990
+#, fuzzy, c-format
+msgid "%s:can't add shortcut for entry \"%s\""
+msgstr "%s:felaktig tangenbordsgenvägsspecifikation \"%s\""
+
+#: ../src/rootmenu.c:1022 ../src/rootmenu.c:1068
+#, fuzzy
+msgid "missing command in menu config"
+msgstr "kommando saknas i menykonfigurationen: %s"
+
+#: ../src/rootmenu.c:1050
+#, fuzzy
+msgid "syntax error in menu file: END declaration missing"
 msgstr "syntaxfel i menykonfigurationen. END-deklarationen saknas"
 
-#: ../rootmenu.c:435
-msgid "syntax error in menu config. %s"
-msgstr "syntaxfel i menykonfigurationen. %s"
+#: ../src/rootmenu.c:1082
+msgid "invalid menu, no menu title given"
+msgstr ""
 
-#: ../rootmenu.c:443
-msgid "no title given for the root menu"
-msgstr "ingen titel (title) angiven för rot menyn"
+#: ../src/rootmenu.c:1101 ../src/rootmenu.c:1143 ../src/rootmenu.c:1173
+#: ../src/rootmenu.c:1187
+#, fuzzy, c-format
+msgid "could not open menu file \"%s\": %s"
+msgstr "kunde inte öppna konfigurationsfilen: \"%s\""
 
-#: ../rootmenu.c:455
+#: ../src/rootmenu.c:1144
+msgid "pipe command for PropertyList is too long"
+msgstr ""
+
+#: ../src/rootmenu.c:1174
+msgid "pipe command is too long"
+msgstr ""
+
+#: ../src/rootmenu.c:1295 ../src/rootmenu.c:1367 ../src/rootmenu.c:1405
+#, c-format
+msgid "out of memory while constructing directory menu %s"
+msgstr ""
+
+#: ../src/rootmenu.c:1304
+#, fuzzy, c-format
+msgid "%s:could not stat file \"%s\" in menu directory"
+msgstr "appmenu:kunde inte skapa menypost"
+
+#: ../src/rootmenu.c:1454
 msgid "Commands"
 msgstr "Kommandon"
 
-#: ../rootmenu.c:456
+#: ../src/rootmenu.c:1457
+msgid "Restart"
+msgstr ""
+
+#: ../src/rootmenu.c:1458
 msgid "Exit..."
 msgstr "Avsluta..."
 
-#: ../rootmenu.c:573
-msgid "could not stat menu configuration file \"%s\""
-msgstr "kunde inte stat(2): menykonfigurationsfilen \"%s\""
-
-#: ../rootmenu.c:578
-msgid "no read permision to menu configuration file"
-msgstr "inga läsrättigheter till menykonfigurationsfilen"
-
-#: ../rootmenu.c:595
-msgid "could not make arguments for menu file preprocessor"
-msgstr "kunde inte skapa parametrar för förbehandling av menyfilen"
-
-#: ../rootmenu.c:603
-msgid "could not open menu configuration preprocessor"
-msgstr "kunde inte öppna menykonfigurations-preprocessorn"
-
-#: ../rootmenu.c:613
-msgid "couldn't open menu configuration file \"%s\""
-msgstr "kunde inte öppna menykonfigurationsfilen \"%s\""
-
-#: ../dock.c:689 ../rootmenu.c:646
-msgid "Error"
-msgstr "Fel"
-
-#: ../rootmenu.c:647
-msgid ""
-"Could not read menu configuration\n"
-"(see console log for details)"
+#: ../src/rootmenu.c:1497
+#, c-format
+msgid "could not find menu file \"%s\" referenced in WMRootMenu"
 msgstr ""
-"Kunde inte läsa menykonfigurationen\n"
-"(se konsol loggen för detaljer)"
 
+#: ../src/rootmenu.c:1503
+#, c-format
+msgid "could not access menu \"%s\" referenced in WMRootMenu"
+msgstr ""
 
-#: ../dialog.c:196
-msgid "OK "
-msgstr "OK "
+#: ../src/rootmenu.c:1516
+#, c-format
+msgid ""
+"using default menu file \"%s\" as the menu referenced in WMRootMenu could "
+"not be found "
+msgstr ""
 
-#: ../dialog.c:210
-msgid "Cancel"
-msgstr "Avbryt"
+#: ../src/rootmenu.c:1546 ../src/rootmenu.c:1606
+#, fuzzy, c-format
+msgid "%s:format error in root menu configuration \"%s\""
+msgstr "syntaxfel i menykonfigurationen. %s"
 
-#: ../resource.c:297 ../resource.c:359 ../resource.c:368 ../resource.c:497 ../resource.c:521 ../resource.c:530 ../resource.c:555
-msgid "%s: syntax error in line \"%s\""
-msgstr "%s: syntax fel på rad \"%s\""
+#: ../src/rootmenu.c:1683
+msgid ""
+"The applications menu could not be loaded. Look at the console output for a "
+"detailed description of the errors."
+msgstr ""
 
-#: ../resource.c:309
-msgid "%s: invalid window attribute specification in \"%s\""
-msgstr "%s: felaktig fönsterattributspecifikation i \"%s\""
+#: ../src/screen.c:136
+#, fuzzy
+msgid "another window manager is running"
+msgstr "det verkar som en fönsterhanterare redan är igång"
 
-#: ../resource.c:336
-msgid "%s: unknown attribute in line \"%s\""
-msgstr "%s: okänt attribut på rad \"%s\""
+#: ../src/screen.c:137
+msgid "use the --replace flag to replace it"
+msgstr ""
 
-#: ../resource.c:416 ../resource.c:425 ../resource.c:437
-msgid "%s:invalid kbd shortcut specification \"%s\""
-msgstr "%s:felaktig tangenbordsgenvägsspecifikation \"%s\""
+#: ../src/screen.c:165
+#, c-format
+msgid "waiting %lus for other window manager to exit"
+msgstr ""
 
-#: ../resource.c:477
-msgid "%s: expected section identifier but got %s"
-msgstr "%s: väntade sektions identifierare, men fick %s"
+#: ../src/screen.c:176
+msgid "other window manager hasn't exited!"
+msgstr ""
 
-#: ../resource.c:510
-msgid "%s: unknown option in line \"%s\""
-msgstr "%s: okänt alternativ på rad \"%s\""
+#: ../src/screen.c:180
+#, fuzzy
+msgid "replacing the other window manager"
+msgstr "Avsluta fönsterhanterare?"
 
-#: ../resource.c:559
-msgid "%s: invalid colormap size in line \"%s\""
-msgstr "%s: felaktig palettstorlek på rad \"%s\""
+#: ../src/screen.c:512
+#, fuzzy, c-format
+msgid "could not load logo image for panels: %s"
+msgstr "kunde inte ladda någon användbar teckenuppsättning"
 
-#: ../resource.c:579
-msgid "%s: invalid geometry display type \"%s\". Shouldbe center, corner, floating or line"
-msgstr "%s: felaktig geometrivisningstyp \"%s\". Borde vara center, corner, floating eller line"
+#: ../src/screen.c:696
+#, c-format
+msgid "can't create Context on screen %d, %s"
+msgstr ""
 
-#: ../resource.c:601
-msgid "%s: invalid focus mode \"%s.\" Should be manual, auto or semiauto"
-msgstr "%s: felaktig focus mode \"%s.\" Borde vara manual, auto eller semiauto"
+#: ../src/screen.c:710
+msgid "could not initialize WINGs widget set"
+msgstr ""
 
-#: ../resource.c:619
-msgid "%s: invalid window placement mode \"%s\". Should be auto, cascade or manual"
-msgstr "%s: felaktigt window placement mode \"%s\". Borde vara auto, cascade eller manual"
-
-#: ../resource.c:639
-msgid "%s: invalid texture type \"%s\" Should be solid, dgradient, vgradient or hgradient"
-msgstr "%s: felaktigt texture type \"%s\" Borde vara solid, dgradient, vgradient eller hgradient"
-
-#: ../resource.c:666
-msgid "%s: invalid gradient spec. \"%s\""
-msgstr "%s: felaktig gradientspecifikation \"%s\""
-
-#: ../resource.c:685
-msgid "%s: invalid coordinate \"%s\""
-msgstr "%s: felaktig koordinat \"%s\""
-
-#: ../resource.c:701
-msgid "%s: invalid justification type \"%s\". Should be left, center or right"
-msgstr "%s: felaktig justification type \"%s\". Borde vara left, center eller right"
-
-#: ../resource.c:731
-msgid "could not make arguments for preference file preprocessor"
-msgstr "kunde inte skapa argument till preference-filens preprocessor"
-
-#: ../resource.c:737
-msgid "could not open preference file preprocessor"
-msgstr "kunde inte öppna preference-filens preprocessor"
-
-#: ../resource.c:744
-msgid "could not open configuration file: \"%s\""
-msgstr "kunde inte öppna konfigurationsfilen: \"%s\""
-
-#: ../resource.c:791
-msgid "could not find default icon \"%s\""
+#: ../src/screen.c:1002
+#, fuzzy, c-format
+msgid "could not save session state in %s"
 msgstr "kunde inte hitta standardikonen \"%s\""
 
-#: ../resource.c:797
-msgid "could not find a preference file (%s) in \"%s\""
-msgstr "kunde inte hitta en preference-fil (%s) i \"%s\""
+#: ../src/session.c:147 ../src/wdefaults.c:660 ../src/winspector.c:529
+#, fuzzy, c-format
+msgid "can't convert \"%s\" to boolean"
+msgstr "kan inte konvertera XBM-filen \"%s\" till det interna formatet"
 
-#: ../resource.c:805
-msgid "could not find icon background \"%s\""
-msgstr "kunde inte hitta ikonbakgrunden \"%s\""
-
-#: ../raster.c:183
-msgid "invalid dither colormap size specification.disabling"
-msgstr "Felaktig storlek för dither-paletten. Slår av"
-
-#: ../raster.c:193
-msgid "Could not build PseudoColor color table\n"
-msgstr "Kunde inte skapa PseudoColor-färgtabell\n"
-
-#: ../misc.c:50
-msgid "could not define value for %s for cpp"
-msgstr "kunde inte definiera värde för %s till cpp"
-
-#: ../misc.c:80
-msgid "could not get password entry for UID %i"
-msgstr "kunde inte få lösenordspost för användar-ID %i"
-
-#: ../appmenu.c:114
-msgid "appmenu:could not create menu"
-msgstr "appmenu:kunde inte skapa meny"
-
-#: ../appmenu.c:145
-msgid "appmenu:could not create menu entry"
-msgstr "appmenu:kunde inte skapa menypost"
-
-#: ../stacking.c:89 ../stacking.c:148
+#: ../src/stacking.c:70
 msgid "could not get window list!!"
 msgstr "kunde inte få fönsterlista!!"
 
-#: ../switchmenu.c:109
+#: ../src/startup.c:118
+#, fuzzy, c-format
+msgid "internal X error: %s"
+msgstr "internt X-fel: %s\n"
+
+#: ../src/startup.c:568 ../src/startup.c:584 ../src/startup.c:590
+#, c-format
+msgid "could not read domain \"%s\" from defaults database"
+msgstr ""
+
+#: ../src/startup.c:576
+#, c-format
+msgid "icon size is configured to %i, but it's too small. Using 16 instead"
+msgstr ""
+
+#: ../src/startup.c:606
+msgid "XKB is not supported. KbdModeLock is automatically disabled."
+msgstr ""
+
+#: ../src/startup.c:636
+#, fuzzy
+msgid "it seems that there is already a window manager running"
+msgstr "det verkar som en fönsterhanterare redan är igång"
+
+#: ../src/startup.c:642
+#, fuzzy, c-format
+msgid "could not manage screen %i"
+msgstr "felaktig färgspecifikation %s"
+
+#: ../src/startup.c:706
+#, fuzzy
+msgid "could not manage any screen"
+msgstr "kunde inte ladda någon användbart typsnitt"
+
+#: ../src/superfluous.c:312
+#, c-format
+msgid "Impossible direction: %d"
+msgstr ""
+
+#: ../src/switchmenu.c:121
 msgid "Windows"
 msgstr "Fönster"
 
-#: ../dock.c:171
-msgid "could not open file \"%s\" to save Dock state"
-msgstr "kunde inte öppna filen \"%s\" för att spara Dockens tillstånd"
+#: ../src/texture.c:331
+#, c-format
+msgid "image file \"%s\" used as texture could not be found."
+msgstr ""
 
-#: ../dock.c:687
-msgid "Could not execute program \"%s\""
-msgstr "kunde inte köra program \"%s\""
+#: ../src/texture.c:336
+#, fuzzy, c-format
+msgid "could not load texture pixmap \"%s\":%s"
+msgstr "kunde inte ladda XP- fil \"%s\""
 
-#: ../winmenu.c:119
-msgid "(Un)Maximize"
+#: ../src/texture.c:458
+#, fuzzy
+msgid "could not allocate image buffer"
+msgstr "kunde inte allokera textur"
+
+#: ../src/wdefaults.c:404
+#, c-format
+msgid "icon \"%s\" doesn't exist, check your config files"
+msgstr ""
+
+#: ../src/wdefaults.c:435
+#, fuzzy, c-format
+msgid "error loading image file \"%s\": %s"
+msgstr "kan inte identifiera bildfil \"%s\""
+
+#: ../src/wdefaults.c:471
+#, c-format
+msgid "could not find default icon \"%s\""
+msgstr "kunde inte hitta standardikonen \"%s\""
+
+#: ../src/window.c:2808 ../src/window.c:2984
+msgid ""
+"The NumLock, ScrollLock or similar key seems to be turned on. Turn it off or "
+"some mouse actions and keyboard shortcuts will not work."
+msgstr ""
+
+#: ../src/winmenu.c:84 ../src/winmenu.c:664
+#, fuzzy
+msgid "Maximize"
 msgstr "(O)Maximera"
 
-#: ../winmenu.c:126
+#: ../src/winmenu.c:85
+msgid "Other maximization"
+msgstr ""
+
+#: ../src/winmenu.c:86 ../src/winmenu.c:647
 msgid "Miniaturize"
 msgstr "Minimera"
 
-#: ../winmenu.c:133
-msgid "(Un)Shade"
+#: ../src/winmenu.c:87 ../src/winmenu.c:683
+#, fuzzy
+msgid "Shade"
 msgstr "(O)Skugga"
 
-#: ../winmenu.c:140
-msgid "Hide"
-msgstr "Gömma"
+#: ../src/winmenu.c:89
+msgid "Resize/Move"
+msgstr ""
 
-#: ../winmenu.c:146
-msgid "Hide Others"
-msgstr "Gömma Andra"
+#: ../src/winmenu.c:90 ../src/winmenu.c:700
+msgid "Select"
+msgstr ""
 
-#: ../winmenu.c:149
+#: ../src/winmenu.c:91
+msgid "Move To"
+msgstr ""
+
+#: ../src/winmenu.c:92
+msgid "Attributes..."
+msgstr ""
+
+#: ../src/winmenu.c:93
+#, fuzzy
+msgid "Options"
+msgstr "alternativ:"
+
+#: ../src/winmenu.c:95
 msgid "Close"
 msgstr "Stäng"
 
-#: ../winmenu.c:156
-msgid "Kill"
-msgstr "Döda"
+#: ../src/winmenu.c:113
+msgid "Keep on top"
+msgstr ""
 
-#: ../generic/error.c:46
-msgid " fatal error: "
-msgstr " fatalt fel: "
+#: ../src/winmenu.c:114
+msgid "Keep at bottom"
+msgstr ""
 
-#: ../generic/error.c:72
-msgid " warning: "
-msgstr " varning: "
+#: ../src/winmenu.c:126
+msgid "Maximize vertically"
+msgstr ""
+
+#: ../src/winmenu.c:127
+msgid "Maximize horizontally"
+msgstr ""
+
+#: ../src/winmenu.c:128
+msgid "Maximize left half"
+msgstr ""
+
+#: ../src/winmenu.c:129
+msgid "Maximize right half"
+msgstr ""
+
+#: ../src/winmenu.c:130
+msgid "Maximize top half"
+msgstr ""
+
+#: ../src/winmenu.c:131
+msgid "Maximize bottom half"
+msgstr ""
+
+#: ../src/winmenu.c:132
+msgid "Maximize left top corner"
+msgstr ""
+
+#: ../src/winmenu.c:133
+msgid "Maximize right top corner"
+msgstr ""
+
+#: ../src/winmenu.c:134
+msgid "Maximize left bottom corner"
+msgstr ""
+
+#: ../src/winmenu.c:135
+msgid "Maximize right bottom corner"
+msgstr ""
+
+#: ../src/winmenu.c:136
+msgid "Maximus: tiled maximization"
+msgstr ""
+
+#: ../src/winmenu.c:255
+msgid ""
+"This will kill the application.\n"
+"Any unsaved changes will be lost.\n"
+"Please confirm."
+msgstr ""
+
+#: ../src/winmenu.c:409 ../src/winmenu.c:417
+msgid "Set Shortcut"
+msgstr ""
+
+#: ../src/winmenu.c:524 ../src/winmenu.c:549 ../src/winmenu.c:574
+#, fuzzy
+msgid "could not create submenu for window menu"
+msgstr "kunde inte skapa arbetsytans meny"
+
+#: ../src/winmenu.c:641
+#, fuzzy
+msgid "Deminiaturize"
+msgstr "Minimera"
+
+#: ../src/winmenu.c:657
+#, fuzzy
+msgid "Unmaximize"
+msgstr "(O)Maximera"
+
+#: ../src/winmenu.c:677
+#, fuzzy
+msgid "Unshade"
+msgstr "(O)Skugga"
+
+#: ../src/winmenu.c:694
+msgid "Deselect"
+msgstr ""
+
+#: ../src/winspector.c:70
+msgid "Disable titlebar"
+msgstr ""
+
+#: ../src/winspector.c:71
+msgid ""
+"Remove the titlebar of this window.\n"
+"To access the window commands menu of a window\n"
+"without its titlebar, press Control+Esc (or the\n"
+"equivalent shortcut, if you changed the default\n"
+"settings)."
+msgstr ""
+
+#: ../src/winspector.c:77
+msgid "Disable resizebar"
+msgstr ""
+
+#: ../src/winspector.c:78
+msgid "Remove the resizebar of this window."
+msgstr ""
+
+#: ../src/winspector.c:80
+msgid "Disable close button"
+msgstr ""
+
+#: ../src/winspector.c:81
+msgid "Remove the `close window' button of this window."
+msgstr ""
+
+#: ../src/winspector.c:83
+msgid "Disable miniaturize button"
+msgstr ""
+
+#: ../src/winspector.c:84
+msgid "Remove the `miniaturize window' button of the window."
+msgstr ""
+
+#: ../src/winspector.c:86
+msgid "Disable border"
+msgstr ""
+
+#: ../src/winspector.c:87
+msgid "Remove the 1 pixel black border around the window."
+msgstr ""
+
+#: ../src/winspector.c:89
+msgid "Keep on top (floating)"
+msgstr ""
+
+#: ../src/winspector.c:90
+msgid ""
+"Keep the window over other windows, not allowing\n"
+"them to cover it."
+msgstr ""
+
+#: ../src/winspector.c:93
+msgid "Keep at bottom (sunken)"
+msgstr ""
+
+#: ../src/winspector.c:94
+msgid "Keep the window under all other windows."
+msgstr ""
+
+#: ../src/winspector.c:97
+msgid "Make window present in all workspaces."
+msgstr ""
+
+#: ../src/winspector.c:99
+#, fuzzy
+msgid "Start miniaturized"
+msgstr "Minimera"
+
+#: ../src/winspector.c:100
+msgid ""
+"Make the window be automatically miniaturized when it's\n"
+"first shown."
+msgstr ""
+
+#: ../src/winspector.c:103
+msgid "Start maximized"
+msgstr ""
+
+#: ../src/winspector.c:104
+msgid ""
+"Make the window be automatically maximized when it's\n"
+"first shown."
+msgstr ""
+
+#: ../src/winspector.c:107
+msgid "Full screen maximization"
+msgstr ""
+
+#: ../src/winspector.c:108
+msgid ""
+"Make the window use the whole screen space when it's\n"
+"maximized. The titlebar and resizebar will be moved\n"
+"to outside the screen."
+msgstr ""
+
+#: ../src/winspector.c:113
+msgid "Do not bind keyboard shortcuts"
+msgstr ""
+
+#: ../src/winspector.c:114
+msgid ""
+"Do not bind keyboard shortcuts from Window Maker\n"
+"when this window is focused. This will allow the\n"
+"window to receive all key combinations regardless\n"
+"of your shortcut configuration."
+msgstr ""
+
+#: ../src/winspector.c:119
+msgid "Do not bind mouse clicks"
+msgstr ""
+
+#: ../src/winspector.c:120
+msgid ""
+"Do not bind mouse actions, such as `Alt'+drag\n"
+"in the window (when Alt is the modifier you have\n"
+"configured)."
+msgstr ""
+
+#: ../src/winspector.c:124
+#, fuzzy
+msgid "Do not show in the window list"
+msgstr "kunde inte få fönsterlista!!"
+
+#: ../src/winspector.c:125
+msgid "Do not list the window in the window list menu."
+msgstr ""
+
+#: ../src/winspector.c:127
+msgid "Do not show in the switch panel"
+msgstr ""
+
+#: ../src/winspector.c:128
+msgid "Do not include in switch panel while cycling windows."
+msgstr ""
+
+#: ../src/winspector.c:130
+msgid "Do not let it take focus"
+msgstr ""
+
+#: ../src/winspector.c:131
+msgid ""
+"Do not let the window take keyboard focus when you\n"
+"click on it."
+msgstr ""
+
+#: ../src/winspector.c:134
+msgid "Keep inside screen"
+msgstr ""
+
+#: ../src/winspector.c:135
+msgid ""
+"Do not allow the window to move itself completely\n"
+"outside the screen. For bug compatibility.\n"
+msgstr ""
+
+#: ../src/winspector.c:138
+#, fuzzy
+msgid "Ignore 'Hide Others'"
+msgstr "Gömma Andra"
+
+#: ../src/winspector.c:139
+msgid ""
+"Do not hide the window when issuing the\n"
+"`HideOthers' command."
+msgstr ""
+
+#: ../src/winspector.c:142
+msgid "Ignore 'Save Session'"
+msgstr ""
+
+#: ../src/winspector.c:143
+msgid ""
+"Do not save the associated application in the\n"
+"session's state, so that it won't be restarted\n"
+"together with other applications when Window Maker\n"
+"starts."
+msgstr ""
+
+#: ../src/winspector.c:148
+msgid "Emulate application icon"
+msgstr ""
+
+#: ../src/winspector.c:149
+msgid ""
+"Make this window act as an application that provides\n"
+"enough information to Window Maker for a dockable\n"
+"application icon to be created."
+msgstr ""
+
+#: ../src/winspector.c:153
+msgid "Focus across workspaces"
+msgstr ""
+
+#: ../src/winspector.c:154
+msgid ""
+"Allow Window Maker to switch workspace to satisfy\n"
+"a focus request (annoying)."
+msgstr ""
+
+#: ../src/winspector.c:157
+msgid "Do not let it be minimized"
+msgstr ""
+
+#: ../src/winspector.c:158
+msgid ""
+"Do not let the window of this application be\n"
+"minimized.\n"
+msgstr ""
+
+#: ../src/winspector.c:161
+msgid "Ignore decoration changes"
+msgstr ""
+
+#: ../src/winspector.c:162
+msgid ""
+"Ignore any request from the application to change\n"
+"window decorations (like hiding the titlebar).\n"
+msgstr ""
+
+#: ../src/winspector.c:166
+msgid "Disable language button"
+msgstr ""
+
+#: ../src/winspector.c:167
+msgid "Remove the `toggle language' button of the window."
+msgstr ""
+
+#: ../src/winspector.c:171
+msgid "Start hidden"
+msgstr ""
+
+#: ../src/winspector.c:172
+msgid "Automatically hide application when it's started."
+msgstr ""
+
+#: ../src/winspector.c:174
+msgid "No application icon"
+msgstr ""
+
+#: ../src/winspector.c:175
+msgid ""
+"Disable the application icon for the application.\n"
+"Note that you won't be able to dock it anymore,\n"
+"and any icons that are already docked will stop\n"
+"working correctly."
+msgstr ""
+
+#: ../src/winspector.c:180
+msgid "Shared application icon"
+msgstr ""
+
+#: ../src/winspector.c:181
+msgid ""
+"Use a single shared application icon for all of\n"
+"the instances of this application.\n"
+msgstr ""
+
+#: ../src/winspector.c:475
+#, c-format
+msgid "Could not find icon \"%s\" specified for this window"
+msgstr ""
+
+#: ../src/winspector.c:490
+#, fuzzy, c-format
+msgid "Could not open specified icon \"%s\":%s"
+msgstr "kunde inte hitta standardikonen \"%s\""
+
+#: ../src/winspector.c:824
+#, c-format
+msgid ""
+"Ignore client supplied icon is set, but icon filename textbox is empty. "
+"Using client supplied icon"
+msgstr ""
+
+#: ../src/winspector.c:1011
+#, c-format
+msgid "Inspecting  %s.%s"
+msgstr ""
+
+#: ../src/winspector.c:1036
+msgid "Click in the window you wish to inspect."
+msgstr ""
+
+#: ../src/winspector.c:1060
+msgid ""
+"The configuration will apply to all\n"
+"windows that have their WM_CLASS\n"
+"property set to the above selected\n"
+"name, when saved."
+msgstr ""
+
+#: ../src/winspector.c:1080
+msgid "Save"
+msgstr ""
+
+#: ../src/winspector.c:1088
+msgid "Apply"
+msgstr ""
+
+#: ../src/winspector.c:1094
+msgid "Reload"
+msgstr ""
+
+#: ../src/winspector.c:1103 ../src/winspector.c:1113
+msgid "Window Specification"
+msgstr ""
+
+#: ../src/winspector.c:1104
+msgid "Window Attributes"
+msgstr ""
+
+#: ../src/winspector.c:1105
+msgid "Advanced Options"
+msgstr ""
+
+#: ../src/winspector.c:1106
+msgid "Icon and Initial Workspace"
+msgstr ""
+
+#: ../src/winspector.c:1107
+msgid "Application Specific"
+msgstr ""
+
+#: ../src/winspector.c:1120
+msgid "Defaults for all windows"
+msgstr ""
+
+#: ../src/winspector.c:1171
+msgid "Select window"
+msgstr ""
+
+#: ../src/winspector.c:1315
+msgid "Attributes"
+msgstr ""
+
+#: ../src/winspector.c:1343
+msgid "Advanced"
+msgstr ""
+
+#: ../src/winspector.c:1376
+#, fuzzy
+msgid "Miniwindow Image"
+msgstr "Avsluta fönsterhanterare?"
+
+#: ../src/winspector.c:1393
+msgid "Icon filename:"
+msgstr ""
+
+#: ../src/winspector.c:1405
+msgid "Ignore client supplied icon"
+msgstr ""
+
+#: ../src/winspector.c:1411
+#, fuzzy
+msgid "Initial Workspace"
+msgstr "Arbetsyta"
+
+#: ../src/winspector.c:1413
+msgid "The workspace to place the window when it's first shown."
+msgstr ""
+
+#: ../src/winspector.c:1419
+msgid "Nowhere in particular"
+msgstr ""
+
+#: ../src/winspector.c:1440
+msgid "Application Attributes"
+msgstr ""
+
+#: ../src/workspace.c:100 ../src/workspace.c:720
+#, fuzzy, c-format
+msgid "Workspace %i"
+msgstr "Arbetsyta"
+
+#: ../src/workspace.c:147
+#, c-format
+msgid "Workspace \"%s\" in use; cannot delete"
+msgstr ""
+
+#: ../src/workspace.c:766
+msgid "Workspaces"
+msgstr "Arbetsyta"
+
+#: ../src/workspace.c:768
+msgid "could not create Workspace menu"
+msgstr "kunde inte skapa arbetsytans meny"
+
+#: ../src/workspace.c:775
+msgid "New"
+msgstr "Ny"
+
+#: ../src/workspace.c:776
+msgid "Destroy Last"
+msgstr "Förstöra sista"
+
+#: ../src/workspace.c:778
+msgid "Last Used"
+msgstr ""
+
+#: ../src/xdnd.c:255
+#, c-format
+msgid "wXDNDGetTypeList failed = %ld"
+msgstr ""
+
+#: ../src/xmodifier.c:134
+#, c-format
+msgid "key %s (0x%x) generates %s, which is generated by %s"
+msgstr ""
+
+#: ../src/xmodifier.c:140
+#, c-format
+msgid "key %s (0x%x) generates %s, which is nonsensical"
+msgstr ""
+
+#: ../src/xmodifier.c:153
+#, c-format
+msgid "key %s (0x%x) generates both %s and %s, which is nonsensical"
+msgstr ""
+
+#: ../src/xmodifier.c:301
+#, c-format
+msgid "Can't convert keymask 0x%04X to a shortcut label"
+msgstr ""
+
+#~ msgid "Restart failed!!!"
+#~ msgstr "Omstart misslyckades!!!"
+
+#~ msgid " -nocpp \t\tdisable preprocessing of configuration files"
+#~ msgstr " -nocpp \t\tstäng av preprocessing för konfigurationsfilerna"
+
+#~ msgid "cannot set locale %s"
+#~ msgstr "kan inte sätta locale %s"
+
+#~ msgid "falling back to C locale"
+#~ msgstr "går tillbaka till C locale"
+
+#~ msgid "stack overflow: too many dead processes"
+#~ msgstr "stacken full: för många döda processer"
+
+#~ msgid "got signal %i (%s)\n"
+#~ msgstr "fick signal %i (%s)\n"
+
+#~ msgid "got signal %i\n"
+#~ msgstr "fick signal %i\n"
+
+#~ msgid "unsupported visual/depth for gradients"
+#~ msgstr "kan ej hantera gradienter på denna visual/färgdjup"
+
+#~ msgid "wrealloc() failed while trying to add menu item"
+#~ msgstr "wrealloc() misslyckades vid addering av ett menyval"
+
+#~ msgid "could not load mask bitmap file \"%s\". Won't use mask"
+#~ msgstr "kunde inte ladda maskfil \"%s\". Kommer inte att använda masken"
+
+#~ msgid "could not load XBM file \"%s\""
+#~ msgstr "kunde inte ladda XBM-fil \"%s\""
+
+#~ msgid "unknown image format in \"%s\""
+#~ msgstr "okänt bildformat i \"%s\""
+
+#~ msgid "can't load pixmap file \"%s\". Size too weird"
+#~ msgstr "kan inte ladda pixmap-fil \"%s\". Storleken för underlig"
+
+#~ msgid "virtual memory exhausted during pixmap load. Not fatal..."
+#~ msgstr "slut virtuellt minne vid laddning av pixmap. Inte fatalt..."
+
+#~ msgid "virtual memory exhausted. Continuing..."
+#~ msgstr "slut virtuellt minne. Fortsätter..."
+
+#~ msgid "cannot load \"%s\": XPM format not supported"
+#~ msgstr "kan inte ladda \"%s\": Kan ej hantera XPM-formatet"
+
+#~ msgid "virtual memory exhausted during XPM load."
+#~ msgstr "slut virtuellt minne vid laddning av XPM"
+
+#~ msgid "could not convert image \"%s\" to internal format"
+#~ msgstr "kunde inte konvertera bilden \"%s\" till det interna formatet"
+
+#~ msgid "can't load \"%s\": unknown image format"
+#~ msgstr "kan inte ladda \"%s\": okänt bildformat"
+
+#~ msgid "The following character sets are missing:"
+#~ msgstr "Följande teckenuppsättningar saknas:"
+
+#~ msgid "The string \"%s\" will be used in place"
+#~ msgstr "Strängen \"%s\" kommer att användas istället"
+
+#~ msgid "of any characters from those sets."
+#~ msgstr "någon av de tecknena ifrån de uppsättningarna."
+
+#~ msgid "could not create font set %s. Using fixed"
+#~ msgstr "kunde inte skapa typsnitt %s. Använder fixed"
+
+#~ msgid "could not load font %s. Using fixed"
+#~ msgstr "kunde inte ladda typsnitt %s. Använder fixed"
+
+#~ msgid "Gradient texture not supported for your display (PseudoColor %ibpp)"
+#~ msgstr ""
+#~ "Kan ej hantera \"gradient texture\" på denna display (PseudoColor %ibpp)"
+
+#~ msgid ""
+#~ "You must enable dithering to be able to use gradients with this display"
+#~ msgstr ""
+#~ "Du måste slå på dithering för att kunna använda gradienter med den här "
+#~ "displayen"
+
+#~ msgid ""
+#~ "Gradient texture available only for PseudoColor and TrueColor displays"
+#~ msgstr ""
+#~ "Gradient texture är bara tillgänglig för PseudoColor- och TrueColor-"
+#~ "displayer"
+
+#~ msgid "colormap size value(s) too large"
+#~ msgstr "färgpalettens storleks värde(n) för stora"
+
+#~ msgid "Switch to %i"
+#~ msgstr "Byt till %i"
+
+#~ msgid "out of memory to store menu commands. Nuking it."
+#~ msgstr "inget minne kvar för att spara menykommandon. Bombar det."
+
+#~ msgid "menu can only have one WORKSPACE_MENU"
+#~ msgstr "menyn kan bara ha en WORKSPACE_MENU (arbetsytemeny)"
+
+#~ msgid "no title given for the root menu"
+#~ msgstr "ingen titel (title) angiven för rot menyn"
+
+#~ msgid "could not stat menu configuration file \"%s\""
+#~ msgstr "kunde inte stat(2): menykonfigurationsfilen \"%s\""
+
+#~ msgid "no read permision to menu configuration file"
+#~ msgstr "inga läsrättigheter till menykonfigurationsfilen"
+
+#~ msgid "could not make arguments for menu file preprocessor"
+#~ msgstr "kunde inte skapa parametrar för förbehandling av menyfilen"
+
+#~ msgid "could not open menu configuration preprocessor"
+#~ msgstr "kunde inte öppna menykonfigurations-preprocessorn"
+
+#~ msgid "couldn't open menu configuration file \"%s\""
+#~ msgstr "kunde inte öppna menykonfigurationsfilen \"%s\""
+
+#~ msgid ""
+#~ "Could not read menu configuration\n"
+#~ "(see console log for details)"
+#~ msgstr ""
+#~ "Kunde inte läsa menykonfigurationen\n"
+#~ "(se konsol loggen för detaljer)"
+
+#~ msgid "%s: syntax error in line \"%s\""
+#~ msgstr "%s: syntax fel på rad \"%s\""
+
+#~ msgid "%s: expected section identifier but got %s"
+#~ msgstr "%s: väntade sektions identifierare, men fick %s"
+
+#~ msgid "%s: unknown option in line \"%s\""
+#~ msgstr "%s: okänt alternativ på rad \"%s\""
+
+#~ msgid ""
+#~ "%s: invalid geometry display type \"%s\". Shouldbe center, corner, "
+#~ "floating or line"
+#~ msgstr ""
+#~ "%s: felaktig geometrivisningstyp \"%s\". Borde vara center, corner, "
+#~ "floating eller line"
+
+#~ msgid "%s: invalid focus mode \"%s.\" Should be manual, auto or semiauto"
+#~ msgstr ""
+#~ "%s: felaktig focus mode \"%s.\" Borde vara manual, auto eller semiauto"
+
+#~ msgid ""
+#~ "%s: invalid window placement mode \"%s\". Should be auto, cascade or "
+#~ "manual"
+#~ msgstr ""
+#~ "%s: felaktigt window placement mode \"%s\". Borde vara auto, cascade "
+#~ "eller manual"
+
+#~ msgid ""
+#~ "%s: invalid texture type \"%s\" Should be solid, dgradient, vgradient or "
+#~ "hgradient"
+#~ msgstr ""
+#~ "%s: felaktigt texture type \"%s\" Borde vara solid, dgradient, vgradient "
+#~ "eller hgradient"
+
+#~ msgid "%s: invalid gradient spec. \"%s\""
+#~ msgstr "%s: felaktig gradientspecifikation \"%s\""
+
+#~ msgid ""
+#~ "%s: invalid justification type \"%s\". Should be left, center or right"
+#~ msgstr ""
+#~ "%s: felaktig justification type \"%s\". Borde vara left, center eller "
+#~ "right"
+
+#~ msgid "could not make arguments for preference file preprocessor"
+#~ msgstr "kunde inte skapa argument till preference-filens preprocessor"
+
+#~ msgid "could not open preference file preprocessor"
+#~ msgstr "kunde inte öppna preference-filens preprocessor"
+
+#~ msgid "could not find a preference file (%s) in \"%s\""
+#~ msgstr "kunde inte hitta en preference-fil (%s) i \"%s\""
+
+#~ msgid "invalid dither colormap size specification.disabling"
+#~ msgstr "Felaktig storlek för dither-paletten. Slår av"
+
+#~ msgid "Could not build PseudoColor color table\n"
+#~ msgstr "Kunde inte skapa PseudoColor-färgtabell\n"
+
+#~ msgid "could not define value for %s for cpp"
+#~ msgstr "kunde inte definiera värde för %s till cpp"
+
+#~ msgid "could not get password entry for UID %i"
+#~ msgstr "kunde inte få lösenordspost för användar-ID %i"
+
+#~ msgid "could not open file \"%s\" to save Dock state"
+#~ msgstr "kunde inte öppna filen \"%s\" för att spara Dockens tillstånd"

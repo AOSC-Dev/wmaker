@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: wmaker-0.95.6+\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-18 08:07+0200\n"
-"PO-Revision-Date: 2015-05-18 00:00+0000\n"
+"Project-Id-Version: WindowMaker 0.95.9\n"
+"Report-Msgid-Bugs-To: wmaker-dev@googlegroups.com\n"
+"POT-Creation-Date: 2022-08-11 22:56-0700\n"
+"PO-Revision-Date: 2022-08-11 23:00-0700\n"
 "Last-Translator: Alwin <translations@ziggo.nl>\n"
 "Language-Team: Dutch\n"
 "Language: nl\n"
@@ -261,8 +261,8 @@ msgstr ""
 #: ../../WINGs/proplist.c:167 ../../WINGs/proplist.c:217
 #: ../../WINGs/proplist.c:382 ../../WINGs/proplist.c:458
 #: ../../WINGs/proplist.c:1048 ../../WINGs/proplist.c:1098
-#: ../../WINGs/proplist.c:1246 ../../WINGs/proplist.c:1314
-#: ../../WINGs/proplist.c:1419 ../../WINGs/proplist.c:1463
+#: ../../WINGs/proplist.c:1246 ../../WINGs/proplist.c:1326
+#: ../../WINGs/proplist.c:1431 ../../WINGs/proplist.c:1475
 msgid "Used proplist functions on non-WMPropLists objects"
 msgstr ""
 
@@ -333,57 +333,57 @@ msgstr ""
 msgid "Comments are not allowed inside WindowMaker owned domain files."
 msgstr "Commentaar is niet toegestaan binnen domeinbestanden van WindowMaker."
 
-#: ../../WINGs/proplist.c:1483 ../../WINGs/proplist.c:1548
-#: ../../WINGs/proplist.c:1612
+#: ../../WINGs/proplist.c:1495 ../../WINGs/proplist.c:1560
+#: ../../WINGs/proplist.c:1624
 msgid "extra data after end of property list"
 msgstr "extra data na einde van 'property list'"
 
-#: ../../WINGs/proplist.c:1523
+#: ../../WINGs/proplist.c:1535
 #, c-format
 msgid "could not get size for file '%s'"
 msgstr "kon grootte voor bestand '%s' niet krijgen"
 
-#: ../../WINGs/proplist.c:1531
+#: ../../WINGs/proplist.c:1543
 #, c-format
 msgid "error reading from file '%s'"
 msgstr "fout bij inlezen bestand '%s'"
 
-#: ../../WINGs/proplist.c:1578
+#: ../../WINGs/proplist.c:1590
 #, c-format
 msgid "%s:could not open menu file"
 msgstr "%s:kon menubestand niet openen"
 
-#: ../../WINGs/proplist.c:1660
+#: ../../WINGs/proplist.c:1672
 #, c-format
 msgid "mkstemp (%s) failed"
 msgstr "aanmaken uniek tijdelijk bestand (%s) mislukt"
 
-#: ../../WINGs/proplist.c:1670
+#: ../../WINGs/proplist.c:1682
 #, c-format
 msgid "mktemp (%s) failed"
 msgstr "aanmaken tijdelijk bestand (%s) mislukt"
 
-#: ../../WINGs/proplist.c:1677
+#: ../../WINGs/proplist.c:1689
 #, c-format
 msgid "open (%s) failed"
 msgstr "openen (%s) mislukt"
 
-#: ../../WINGs/proplist.c:1684
+#: ../../WINGs/proplist.c:1696
 #, c-format
 msgid "writing to file: %s failed"
 msgstr "schrijven naar bestand: %s mislukt"
 
-#: ../../WINGs/proplist.c:1693
+#: ../../WINGs/proplist.c:1705
 #, c-format
 msgid "fclose (%s) failed"
 msgstr "afsluiten stream (%s) mislukt"
 
-#: ../../WINGs/proplist.c:1701
+#: ../../WINGs/proplist.c:1713
 #, c-format
 msgid "rename ('%s' to '%s') failed"
 msgstr "hernoemen ('%s' naar '%s') mislukt"
 
-#: ../../WINGs/proplist.c:1772
+#: ../../WINGs/proplist.c:1784
 #, c-format
 msgid "Could not create component %s"
 msgstr "Kon component %s niet aanmaken"
@@ -394,7 +394,7 @@ msgstr ""
 "variabele WMAKER_USER_ROOT, gedefinieerd met ongeldig pad, niet gebruikt"
 
 #. something happened with the file. just overwrite it
-#: ../../WINGs/userdefaults.c:210 ../../WINGs/userdefaults.c:225
+#: ../../WINGs/userdefaults.c:207 ../../WINGs/userdefaults.c:222
 #, c-format
 msgid "cannot read domain from file '%s' when syncing"
 msgstr "kan domeinbestand '%s' niet inlezen bij synchroniseren"
@@ -452,110 +452,110 @@ msgstr "grijs"
 msgid "dark gray"
 msgstr "donkergrijs"
 
-#: ../../WINGs/wcolorpanel.c:393
+#: ../../WINGs/wcolorpanel.c:390
 msgid "Colors"
 msgstr "Kleuren"
 
-#: ../../WINGs/wcolorpanel.c:568 ../../WINGs/wcolorpanel.c:2720
+#: ../../WINGs/wcolorpanel.c:565 ../../WINGs/wcolorpanel.c:2719
 msgid "Brightness"
 msgstr "Helderheid"
 
-#: ../../WINGs/wcolorpanel.c:570 ../../WINGs/wcolorpanel.c:644
-#: ../../WINGs/wcolorpanel.c:675 ../../WINGs/wcolorpanel.c:706
-#: ../../WINGs/wcolorpanel.c:781 ../../WINGs/wcolorpanel.c:812
-#: ../../WINGs/wcolorpanel.c:844 ../../WINGs/wcolorpanel.c:877
-#: ../../WINGs/wcolorpanel.c:2016 ../../WINGs/wcolorpanel.c:2722
-#: ../../WINGs/wcolorpanel.c:2756 ../../WINGs/wcolorpanel.c:2790
+#: ../../WINGs/wcolorpanel.c:567 ../../WINGs/wcolorpanel.c:641
+#: ../../WINGs/wcolorpanel.c:672 ../../WINGs/wcolorpanel.c:703
+#: ../../WINGs/wcolorpanel.c:778 ../../WINGs/wcolorpanel.c:809
+#: ../../WINGs/wcolorpanel.c:841 ../../WINGs/wcolorpanel.c:874
+#: ../../WINGs/wcolorpanel.c:2013 ../../WINGs/wcolorpanel.c:2721
+#: ../../WINGs/wcolorpanel.c:2755 ../../WINGs/wcolorpanel.c:2789
 msgid "Color Panel: Could not allocate memory"
 msgstr "Kleurenpaneel: Kon geen geheugen toewijzen"
 
-#: ../../WINGs/wcolorpanel.c:642
+#: ../../WINGs/wcolorpanel.c:639
 msgid "Red"
 msgstr "Rood"
 
-#: ../../WINGs/wcolorpanel.c:673
+#: ../../WINGs/wcolorpanel.c:670
 msgid "Green"
 msgstr "Groen"
 
-#: ../../WINGs/wcolorpanel.c:704
+#: ../../WINGs/wcolorpanel.c:701
 msgid "Blue"
 msgstr "Blauw"
 
-#: ../../WINGs/wcolorpanel.c:718
+#: ../../WINGs/wcolorpanel.c:715
 msgid "Decimal"
 msgstr "Decimaal"
 
-#: ../../WINGs/wcolorpanel.c:726
+#: ../../WINGs/wcolorpanel.c:723
 msgid "Hexadecimal"
 msgstr "Hexadecimaal"
 
-#: ../../WINGs/wcolorpanel.c:779
+#: ../../WINGs/wcolorpanel.c:776
 msgid "Cyan"
 msgstr "Cyaan"
 
-#: ../../WINGs/wcolorpanel.c:810
+#: ../../WINGs/wcolorpanel.c:807
 msgid "Magenta"
 msgstr "Magenta"
 
-#: ../../WINGs/wcolorpanel.c:842
+#: ../../WINGs/wcolorpanel.c:839
 msgid "Yellow"
 msgstr "Geel"
 
-#: ../../WINGs/wcolorpanel.c:875
+#: ../../WINGs/wcolorpanel.c:872
 msgid "Black"
 msgstr "Zwart"
 
-#: ../../WINGs/wcolorpanel.c:950
+#: ../../WINGs/wcolorpanel.c:947
 msgid "Spectrum"
 msgstr "Spectrum"
 
-#: ../../WINGs/wcolorpanel.c:976
+#: ../../WINGs/wcolorpanel.c:973
 msgid "Palette"
 msgstr "Palet"
 
-#: ../../WINGs/wcolorpanel.c:981
+#: ../../WINGs/wcolorpanel.c:978
 msgid "New from File..."
 msgstr "Nieuw uit bestand..."
 
-#: ../../WINGs/wcolorpanel.c:982 ../../WINGs/wcolorpanel.c:1027
-#: ../../WINGs/wcolorpanel.c:1042
+#: ../../WINGs/wcolorpanel.c:979 ../../WINGs/wcolorpanel.c:1024
+#: ../../WINGs/wcolorpanel.c:1039
 msgid "Rename..."
 msgstr "Hernoemen..."
 
-#: ../../WINGs/wcolorpanel.c:983 ../../WINGs/wcolorpanel.c:1028
-#: ../../WINGs/wcolorpanel.c:1043 ../../WINGs/wcolorpanel.c:3180
+#: ../../WINGs/wcolorpanel.c:980 ../../WINGs/wcolorpanel.c:1025
+#: ../../WINGs/wcolorpanel.c:1040 ../../WINGs/wcolorpanel.c:3179
 msgid "Remove"
 msgstr "Verwijderen"
 
-#: ../../WINGs/wcolorpanel.c:984
+#: ../../WINGs/wcolorpanel.c:981
 msgid "Copy"
 msgstr "Kopiëren"
 
-#: ../../WINGs/wcolorpanel.c:985
+#: ../../WINGs/wcolorpanel.c:982
 msgid "New from Clipboard"
 msgstr "Nieuw van klembord"
 
-#: ../../WINGs/wcolorpanel.c:1004
+#: ../../WINGs/wcolorpanel.c:1001
 msgid "X11-Colors"
 msgstr "X11-kleuren"
 
-#: ../../WINGs/wcolorpanel.c:1021
+#: ../../WINGs/wcolorpanel.c:1018
 msgid "Color"
 msgstr "Kleur"
 
-#: ../../WINGs/wcolorpanel.c:1026
+#: ../../WINGs/wcolorpanel.c:1023
 msgid "Add..."
 msgstr "Toevoegen..."
 
-#: ../../WINGs/wcolorpanel.c:1036
+#: ../../WINGs/wcolorpanel.c:1033
 msgid "List"
 msgstr "Lijst"
 
-#: ../../WINGs/wcolorpanel.c:1041
+#: ../../WINGs/wcolorpanel.c:1038
 msgid "New..."
 msgstr "Nieuw..."
 
-#: ../../WINGs/wcolorpanel.c:1170
+#: ../../WINGs/wcolorpanel.c:1167
 #, c-format
 msgid ""
 "Color Panel: Could not create directory %s needed to store configurations"
@@ -563,76 +563,76 @@ msgstr ""
 "Kleurenpaneel: Kon map %s, nodig om instellingen op te slaan, niet aanmaken"
 
 #. Delete the file, it doesn't belong here
-#: ../../WINGs/wcolorpanel.c:1176 ../../WINGs/wcolorpanel.c:3073
-#: ../../WINGs/wcolorpanel.c:3077
+#: ../../WINGs/wcolorpanel.c:1173 ../../WINGs/wcolorpanel.c:3072
+#: ../../WINGs/wcolorpanel.c:3076
 msgid "File Error"
 msgstr "Bestandsfout"
 
-#: ../../WINGs/wcolorpanel.c:1177
+#: ../../WINGs/wcolorpanel.c:1174
 msgid "Could not create ColorPanel configuration directory"
 msgstr "Kon instellingenmap Kleurenpaneel niet aanmaken"
 
-#: ../../WINGs/wcolorpanel.c:1178 ../../WINGs/wcolorpanel.c:3074
-#: ../../WINGs/wcolorpanel.c:3079 ../../WINGs/wcolorpanel.c:3104
+#: ../../WINGs/wcolorpanel.c:1175 ../../WINGs/wcolorpanel.c:3073
+#: ../../WINGs/wcolorpanel.c:3078 ../../WINGs/wcolorpanel.c:3103
 #: ../../WINGs/wfilepanel.c:227 ../../WINGs/wfilepanel.c:596
 #: ../../WINGs/wfilepanel.c:611 ../../WINGs/wfilepanel.c:715
 #: ../../WINGs/wfilepanel.c:883 ../../WINGs/wfontpanel.c:532
 msgid "OK"
 msgstr "OK"
 
-#: ../../WINGs/wcolorpanel.c:1184
+#: ../../WINGs/wcolorpanel.c:1181
 msgid "Color Panel: Could not find file"
 msgstr "Kleurenpaneel: Kon bestand niet vinden"
 
-#: ../../WINGs/wcolorpanel.c:1380 ../../WINGs/wcolorpanel.c:1441
-#: ../../WINGs/wcolorpanel.c:1501
+#: ../../WINGs/wcolorpanel.c:1377 ../../WINGs/wcolorpanel.c:1438
+#: ../../WINGs/wcolorpanel.c:1498
 msgid "Color Panel: X failed request"
 msgstr "Kleurenpaneel: X-aanvraag mislukt"
 
-#: ../../WINGs/wcolorpanel.c:2754
+#: ../../WINGs/wcolorpanel.c:2753
 msgid "Saturation"
 msgstr "Verzadiging"
 
-#: ../../WINGs/wcolorpanel.c:2788
+#: ../../WINGs/wcolorpanel.c:2787
 msgid "Hue"
 msgstr "Tint"
 
-#: ../../WINGs/wcolorpanel.c:3012
+#: ../../WINGs/wcolorpanel.c:3011
 msgid "Open Palette"
 msgstr "Open palet"
 
-#: ../../WINGs/wcolorpanel.c:3074
+#: ../../WINGs/wcolorpanel.c:3073
 msgid "Invalid file format !"
 msgstr "Ongeldige bestandsvorm!"
 
-#: ../../WINGs/wcolorpanel.c:3076
+#: ../../WINGs/wcolorpanel.c:3075
 #, c-format
 msgid "can't remove file %s"
 msgstr "kan bestand %s niet verwijderen"
 
-#: ../../WINGs/wcolorpanel.c:3078
+#: ../../WINGs/wcolorpanel.c:3077
 msgid "Couldn't remove file from Configuration Directory !"
 msgstr "Kon bestand niet verwijderen uit instellingenmap!"
 
-#: ../../WINGs/wcolorpanel.c:3103
+#: ../../WINGs/wcolorpanel.c:3102
 msgid "Rename"
 msgstr "Hernoemen"
 
-#: ../../WINGs/wcolorpanel.c:3103
+#: ../../WINGs/wcolorpanel.c:3102
 msgid "Rename palette to:"
 msgstr "Hernoem palet naar:"
 
-#: ../../WINGs/wcolorpanel.c:3104 ../../WINGs/wfilepanel.c:236
+#: ../../WINGs/wcolorpanel.c:3103 ../../WINGs/wfilepanel.c:236
 #: ../../WINGs/wfilepanel.c:611 ../../WINGs/wfilepanel.c:715
 msgid "Cancel"
 msgstr "Annuleren"
 
 #. Careful, this palette exists already
-#: ../../WINGs/wcolorpanel.c:3120 ../../WINGs/wfilepanel.c:715
+#: ../../WINGs/wcolorpanel.c:3119 ../../WINGs/wfilepanel.c:715
 msgid "Warning"
 msgstr "Waarschuwing"
 
-#: ../../WINGs/wcolorpanel.c:3121
+#: ../../WINGs/wcolorpanel.c:3120
 msgid ""
 "Palette already exists !\n"
 "\n"
@@ -642,24 +642,24 @@ msgstr ""
 "\n"
 "Overschrijven?"
 
-#: ../../WINGs/wcolorpanel.c:3121 ../../WINGs/wcolorpanel.c:3180
+#: ../../WINGs/wcolorpanel.c:3120 ../../WINGs/wcolorpanel.c:3179
 msgid "No"
 msgstr "Nee"
 
-#: ../../WINGs/wcolorpanel.c:3121 ../../WINGs/wcolorpanel.c:3180
+#: ../../WINGs/wcolorpanel.c:3120 ../../WINGs/wcolorpanel.c:3179
 msgid "Yes"
 msgstr "Ja"
 
-#: ../../WINGs/wcolorpanel.c:3152
+#: ../../WINGs/wcolorpanel.c:3151
 #, c-format
 msgid "Couldn't rename palette %s to %s"
 msgstr "Kon palet %s niet hernoemen naar %s"
 
-#: ../../WINGs/wcolorpanel.c:3175
+#: ../../WINGs/wcolorpanel.c:3174
 msgid "This will permanently remove the palette "
 msgstr "Dit zal 't palet "
 
-#: ../../WINGs/wcolorpanel.c:3177
+#: ../../WINGs/wcolorpanel.c:3176
 msgid ""
 ".\n"
 "\n"
@@ -669,12 +669,12 @@ msgstr ""
 "\n"
 "Weet u zeker dat u dit palet wilt verwijderen?"
 
-#: ../../WINGs/wcolorpanel.c:3199
+#: ../../WINGs/wcolorpanel.c:3198
 #, c-format
 msgid "Couldn't remove palette %s"
 msgstr "Kon palet %s niet verwijderen"
 
-#: ../../WINGs/wcolorpanel.c:3499
+#: ../../WINGs/wcolorpanel.c:3501
 msgid "Color Panel: Color unspecified"
 msgstr "Kleurenpaneel: Kleur niet opgegeven"
 
@@ -760,7 +760,7 @@ msgstr "Bestand bestaat niet."
 msgid "invalid font: %s. Trying '%s'"
 msgstr "ongeldig lettertype: %s. Probeert '%s'"
 
-#: ../../WINGs/wfont.c:260 ../../WINGs/wfont.c:278
+#: ../../WINGs/wfont.c:270 ../../WINGs/wfont.c:288
 #, c-format
 msgid "could not load font: %s."
 msgstr "kon lettertype niet laden: %s."
@@ -798,17 +798,17 @@ msgstr "Herstellen"
 msgid "Could not init font config library\n"
 msgstr "Kon bibliotheek 'lettertype instellen' niet initialiseren\n"
 
-#: ../../WINGs/widgets.c:446
+#: ../../WINGs/widgets.c:447
 #, c-format
 msgid "WINGs: could not load widget images file: %s"
 msgstr "WINGs: Kon afbeeldingenbestand besturingselementen niet laden: %s"
 
-#: ../../WINGs/widgets.c:542
+#: ../../WINGs/widgets.c:543
 #, c-format
 msgid "WINGs: could not open display %s"
 msgstr "WINGs: Kon scherm %s niet openen"
 
-#: ../../WINGs/widgets.c:771
+#: ../../WINGs/widgets.c:772
 msgid ""
 "could not load any fonts. Make sure your font installation and locale "
 "settings are correct."
@@ -837,40 +837,40 @@ msgid "icon title conversion error... using STRING encoding"
 msgstr "icoontitelomzettingsfout... gebruikt STRING-codering"
 
 # Keep next entries for wmaker-0.95.6
-msgid "Could not open input file \"%s\""
-msgstr "Kon invoerbestand \"%s\" niet openen"
+#~ msgid "Could not open input file \"%s\""
+#~ msgstr "Kon invoerbestand \"%s\" niet openen"
 
-msgid "Could not create target file \"%s\""
-msgstr "Kon doelbestand \"%s\" niet aanmaken"
+#~ msgid "Could not create target file \"%s\""
+#~ msgstr "Kon doelbestand \"%s\" niet aanmaken"
 
-msgid "An error occured browsing '%s'."
-msgstr "Er trad 'n fout op bij bladeren door '%s'."
+#~ msgid "An error occured browsing '%s'."
+#~ msgstr "Er trad 'n fout op bij bladeren door '%s'."
 
-msgid ""
-"invalid characted '%c' in arg-list for macro \"%s\" while expecting "
-"parameter name"
-msgstr ""
-"ongeldig letterteken '%c' in arg.-lijst voor macro \"%s\", verwachtte "
-"parameternaam"
+#~ msgid ""
+#~ "invalid characted '%c' in arg-list for macro \"%s\" while expecting "
+#~ "parameter name"
+#~ msgstr ""
+#~ "ongeldig letterteken '%c' in arg.-lijst voor macro \"%s\", verwachtte "
+#~ "parameternaam"
 
-msgid ""
-"invalid characted '%c' in arg-list for macro \"%s\" while expecting ',' "
-"or ')'"
-msgstr ""
-"ongeldig letterteken '%c' in arg.-lijst voor macro \"%s\", verwachtte ',' "
-"of ')'"
+#~ msgid ""
+#~ "invalid characted '%c' in arg-list for macro \"%s\" while expecting ',' "
+#~ "or ')'"
+#~ msgstr ""
+#~ "ongeldig letterteken '%c' in arg.-lijst voor macro \"%s\", verwachtte ',' "
+#~ "of ')'"
 
-msgid "unknow directive '#%s'"
-msgstr "onbekende aanwijzing '#%s'"
+#~ msgid "unknow directive '#%s'"
+#~ msgstr "onbekende aanwijzing '#%s'"
 
-msgid "found #%s but have no matching #if"
-msgstr "#%s gevonden, maar heeft geen bijbehorende #if"
+#~ msgid "found #%s but have no matching #if"
+#~ msgstr "#%s gevonden, maar heeft geen bijbehorende #if"
 
-msgid "too many nested includes"
-msgstr "te veel geneste #include's"
+#~ msgid "too many nested includes"
+#~ msgstr "te veel geneste #include's"
 
-msgid "could not find file \"%s\" for include"
-msgstr "kon bestand \"%s\" niet vinden voor #include"
+#~ msgid "could not find file \"%s\" for include"
+#~ msgstr "kon bestand \"%s\" niet vinden voor #include"
 
-msgid "too many nested macro expansion, breaking loop"
-msgstr "te veel geneste macro-uitwerkingen, cyclus afgebroken"
+#~ msgid "too many nested macro expansion, breaking loop"
+#~ msgstr "te veel geneste macro-uitwerkingen, cyclus afgebroken"
