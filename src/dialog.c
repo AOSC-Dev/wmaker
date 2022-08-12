@@ -1205,8 +1205,8 @@ void wShowInfoPanel(WScreen *scr)
 
 	panel->win = WMCreateWindow(scr->wmscreen, "info");
 	WMGetScaleBaseFromSystemFont(scr->wmscreen, &wmScaleWidth, &wmScaleHeight);
-	pwidth = WMScaleX(382);
-	pheight = WMScaleY(250);
+	pwidth = WMScaleX(512);
+	pheight = WMScaleY(344);
 	WMResizeWidget(panel->win, pwidth, pheight);
 
 	logo = WMCreateApplicationIconBlendedPixmap(scr->wmscreen, (RColor *) NULL);
@@ -1216,21 +1216,21 @@ void wShowInfoPanel(WScreen *scr)
 	if (logo) {
 		panel->logoL = WMCreateLabel(panel->win);
 		WMResizeWidget(panel->logoL, WMScaleX(64), WMScaleY(64));
-		WMMoveWidget(panel->logoL, WMScaleX(30), WMScaleY(20));
+		WMMoveWidget(panel->logoL, WMScaleX(96), WMScaleY(20));
 		WMSetLabelImagePosition(panel->logoL, WIPImageOnly);
 		WMSetLabelImage(panel->logoL, logo);
 		WMReleasePixmap(logo);
 	}
 
-	sepHeight = WMScaleY(3);
+	sepHeight = WMScaleY(1);
 	panel->name1L = WMCreateLabel(panel->win);
 	WMResizeWidget(panel->name1L, WMScaleX(240), WMScaleY(30) + WMScaleY(2));
-	WMMoveWidget(panel->name1L, WMScaleX(100), WMScaleY(30) - WMScaleY(2) - sepHeight);
+	WMMoveWidget(panel->name1L, WMScaleX(166), WMScaleY(30) - WMScaleY(2) - sepHeight);
 
 	snprintf(buffer,
 		sizeof(buffer),
-		"Lucida Sans,Comic Sans MS,URW Gothic L,Trebuchet MS:italic:pixelsize=%d:antialias=true",
-		WMScaleY(24));
+		"Unifont:pixelsize=%d:antialias=true",
+		WMScaleY(32));
 	font = WMCreateFont(scr->wmscreen, buffer);
 	strbuf = "Window Maker";
 	if (font) {
@@ -1243,37 +1243,39 @@ void wShowInfoPanel(WScreen *scr)
 
 	panel->lineF = WMCreateFrame(panel->win);
 	WMResizeWidget(panel->lineF, width, sepHeight);
-	WMMoveWidget(panel->lineF, WMScaleX(100) + (WMScaleX(240) - width) / 2, WMScaleY(60) - sepHeight);
+	WMMoveWidget(panel->lineF, WMScaleX(166) + (WMScaleX(240) - width) / 2, WMScaleY(60) - sepHeight);
 	WMSetFrameRelief(panel->lineF, WRSimple);
 	WMSetWidgetBackgroundColor(panel->lineF, scr->black);
 
 	panel->name2L = WMCreateLabel(panel->win);
 	WMResizeWidget(panel->name2L, WMScaleX(240), WMScaleY(24));
-	WMMoveWidget(panel->name2L, WMScaleX(100), WMScaleY(60));
-	snprintf(buffer, sizeof(buffer), "URW Gothic L,Nimbus Sans L:pixelsize=%d:antialias=true", WMScaleY(16));
+	WMMoveWidget(panel->name2L, WMScaleX(166), WMScaleY(60));
+	snprintf(buffer, sizeof(buffer), "Unifont:pixelsize=%d:antialias=true", WMScaleY(16));
 	font = WMCreateFont(scr->wmscreen, buffer);
 	if (font) {
 		WMSetLabelFont(panel->name2L, font);
-		WMReleaseFont(font);
-		font = NULL;
 	}
 	WMSetLabelTextAlignment(panel->name2L, WACenter);
 	WMSetLabelText(panel->name2L, _("Window Manager for X"));
 
 	snprintf(buffer, sizeof(buffer), _("Version %s"), VERSION);
 	panel->versionL = WMCreateLabel(panel->win);
-	WMResizeWidget(panel->versionL, WMScaleX(310), WMScaleY(16));
-	WMMoveWidget(panel->versionL, WMScaleX(30), WMScaleY(95));
-	WMSetLabelTextAlignment(panel->versionL, WARight);
+	if (font) {
+		WMSetLabelFont(panel->versionL, font);
+		WMReleaseFont(font);
+		font = NULL;
+	}
+	WMResizeWidget(panel->versionL, WMScaleX(450), WMScaleY(16));
+	WMMoveWidget(panel->versionL, WMScaleX(30), WMScaleY(112));
 	WMSetLabelText(panel->versionL, buffer);
 	WMSetLabelWraps(panel->versionL, False);
 
 	panel->copyrL = WMCreateLabel(panel->win);
-	WMResizeWidget(panel->copyrL, WMScaleX(360), WMScaleY(60));
-	WMMoveWidget(panel->copyrL, WMScaleX(15), WMScaleY(190));
+	WMResizeWidget(panel->copyrL, WMScaleX(516), WMScaleY(84));
+	WMMoveWidget(panel->copyrL, WMScaleX(30), WMScaleY(240));
 	WMSetLabelTextAlignment(panel->copyrL, WALeft);
 	WMSetLabelText(panel->copyrL, COPYRIGHT_TEXT);
-	font = WMSystemFontOfSize(scr->wmscreen, WMScaleY(11));
+	font = WMSystemFontOfSize(scr->wmscreen, WMScaleY(16));
 	if (font) {
 		WMSetLabelFont(panel->copyrL, font);
 		WMReleaseFont(font);
@@ -1377,10 +1379,10 @@ void wShowInfoPanel(WScreen *scr)
 #endif
 
 	panel->infoL = WMCreateLabel(panel->win);
-	WMResizeWidget(panel->infoL, WMScaleX(350), WMScaleY(80));
-	WMMoveWidget(panel->infoL, WMScaleX(15), WMScaleY(115));
+	WMResizeWidget(panel->infoL, WMScaleX(516), WMScaleY(128));
+	WMMoveWidget(panel->infoL, WMScaleX(30), WMScaleY(131));
 	WMSetLabelText(panel->infoL, strbuf);
-	font = WMSystemFontOfSize(scr->wmscreen, WMScaleY(11));
+	font = WMSystemFontOfSize(scr->wmscreen, WMScaleY(16));
 	if (font) {
 		WMSetLabelFont(panel->infoL, font);
 		WMReleaseFont(font);
