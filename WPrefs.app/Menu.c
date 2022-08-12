@@ -350,8 +350,8 @@ static void createPanel(_Panel * p)
 	WMColor *black = WMBlackColor(scr);
 	WMColor *white = WMWhiteColor(scr);
 	WMColor *gray = WMGrayColor(scr);
-	WMFont *bold = WMBoldSystemFontOfSize(scr, 12);
-	WMFont *font = WMSystemFontOfSize(scr, 12);
+	WMFont *bold = WMBoldSystemFontOfSize(scr, 16);
+	WMFont *font = WMSystemFontOfSize(scr, 16);
 	WMLabel *label;
 	int width;
 

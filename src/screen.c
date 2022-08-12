@@ -778,7 +778,7 @@ WScreen *wScreenInit(int screen_number)
 	wBalloonInitialize(scr);
 #endif
 
-	scr->info_text_font = WMBoldSystemFontOfSize(scr->wmscreen, 12);
+	scr->info_text_font = WMBoldSystemFontOfSize(scr->wmscreen, 16);
 
 	scr->tech_draw_font = XLoadQueryFont(dpy, "-adobe-helvetica-bold-r-*-*-12-*-*-*-*-*-*-*");
 	if (!scr->tech_draw_font)

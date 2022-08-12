@@ -1592,7 +1592,7 @@ void wDockSaveState(WScreen *scr, WMPropList *old_state)
 		for (i = 0; i < WMGetPropListItemCount(keys); i++) {
 			tmp = WMGetFromPLArray(keys, i);
 
-			if (strncasecmp(WMGetFromPLString(tmp), "applications", 12) == 0
+			if (strncasecmp(WMGetFromPLString(tmp), "applications", 16) == 0
 			    && !WMGetFromPLDictionary(dock_state, tmp)) {
 
 				WMPutInPLDictionary(dock_state, tmp, WMGetFromPLDictionary(old_state, tmp));

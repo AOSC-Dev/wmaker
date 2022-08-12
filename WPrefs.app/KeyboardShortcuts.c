@@ -512,12 +512,12 @@ static void createPanel(Panel * p)
 	panel->white = WMWhiteColor(scr);
 	panel->black = WMBlackColor(scr);
 	panel->gray = WMGrayColor(scr);
-	panel->font = WMSystemFontOfSize(scr, 12);
+	panel->font = WMSystemFontOfSize(scr, 16);
 
 	panel->box = WMCreateBox(panel->parent);
 	WMSetViewExpandsToParent(WMWidgetView(panel->box), 2, 2, 2, 2);
 
-	boldFont = WMBoldSystemFontOfSize(scr, 12);
+	boldFont = WMBoldSystemFontOfSize(scr, 16);
 
 	/* **************** Actions **************** */
 	panel->actL = WMCreateLabel(panel->box);

@@ -172,7 +172,7 @@ WMTableColumnDelegate *WTCreateStringEditorDelegate(WMTableView * parent)
 	data->widget = WMCreateTextField(parent);
 	W_ReparentView(WMWidgetView(data->widget), WMGetTableViewDocumentView(parent), 0, 0);
 	data->table = parent;
-	data->font = WMSystemFontOfSize(scr, 12);
+	data->font = WMSystemFontOfSize(scr, 16);
 	data->gc = WMColorGC(WMWhiteColor(scr));
 	data->selGC = WMColorGC(WMCreateNamedColor(scr, SelectionColor, False));
 	data->textColor = WMBlackColor(scr);
@@ -246,7 +246,7 @@ WMTableColumnDelegate *WTCreateEnumSelectorDelegate(WMTableView * parent)
 	data->widget = WMCreatePopUpButton(parent);
 	W_ReparentView(WMWidgetView(data->widget), WMGetTableViewDocumentView(parent), 0, 0);
 	data->table = parent;
-	data->font = WMSystemFontOfSize(scr, 12);
+	data->font = WMSystemFontOfSize(scr, 16);
 	data->gc = WMColorGC(WMWhiteColor(scr));
 	data->selGC = WMColorGC(WMCreateNamedColor(scr, SelectionColor, False));
 	data->textColor = WMBlackColor(scr);
@@ -396,7 +396,7 @@ WMTableColumnDelegate *WTCreateStringDelegate(WMTableView * parent)
 	StringData *data = wmalloc(sizeof(StringData));
 
 	data->table = parent;
-	data->font = WMSystemFontOfSize(scr, 12);
+	data->font = WMSystemFontOfSize(scr, 16);
 	data->gc = WMColorGC(WMWhiteColor(scr));
 	data->selGC = WMColorGC(WMCreateNamedColor(scr, SelectionColor, False));
 	data->textColor = WMBlackColor(scr);
@@ -507,7 +507,7 @@ WMTableColumnDelegate *WTCreatePixmapStringDelegate(WMTableView * parent)
 	StringData *data = wmalloc(sizeof(StringData));
 
 	data->table = parent;
-	data->font = WMSystemFontOfSize(scr, 12);
+	data->font = WMSystemFontOfSize(scr, 16);
 	data->gc = WMColorGC(WMWhiteColor(scr));
 	data->selGC = WMColorGC(WMCreateNamedColor(scr, SelectionColor, False));
 	data->textColor = WMBlackColor(scr);

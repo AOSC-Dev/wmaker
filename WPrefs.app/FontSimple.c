@@ -547,7 +547,7 @@ static WMLabel *createListLabel(WMScreen * scr, WMWidget * parent, const char *t
 {
 	WMLabel *label;
 	WMColor *color;
-	WMFont *boldFont = WMBoldSystemFontOfSize(scr, 12);
+	WMFont *boldFont = WMBoldSystemFontOfSize(scr, 16);
 
 	label = WMCreateLabel(parent);
 	WMSetLabelFont(label, boldFont);

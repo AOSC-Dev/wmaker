@@ -219,7 +219,7 @@ WMFontPanel *WMGetFontPanel(WMScreen * scr)
 	WMMoveWidget(panel->sampleT, 10, 10);
 	WMSetTextFieldText(panel->sampleT, _("The quick brown fox jumps over the lazy dog"));
 
-	font = WMBoldSystemFontOfSize(scr, 12);
+	font = WMBoldSystemFontOfSize(scr, 16);
 
 	panel->famL = WMCreateLabel(panel->lowerF);
 	WMSetWidgetBackgroundColor(panel->famL, dark);

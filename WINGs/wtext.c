@@ -2998,7 +2998,7 @@ WMText *WMCreateTextForDocumentType(WMWidget * parent, WMAction * parser, WMActi
 	tPtr->vS = NULL;
 	tPtr->hS = NULL;
 
-	tPtr->dFont = WMSystemFontOfSize(scr, 12);
+	tPtr->dFont = WMSystemFontOfSize(scr, 16);
 
 	tPtr->view->delegate = &_TextViewDelegate;
 
@@ -3688,7 +3688,7 @@ void WMSetTextDefaultFont(WMText * tPtr, WMFont * font)
 	if (font) {
 		tPtr->dFont = WMRetainFont(font);
 	} else {
-		tPtr->dFont = WMSystemFontOfSize(tPtr->view->screen, 12);
+		tPtr->dFont = WMSystemFontOfSize(tPtr->view->screen, 16);
 	}
 }
 

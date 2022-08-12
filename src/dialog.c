@@ -939,8 +939,8 @@ Bool wIconChooserDialog(WScreen *scr, char **file, const char *instance, const c
 
 	WMCreateEventHandler(WMWidgetView(panel->win), KeyPressMask | KeyReleaseMask, keyPressHandler, panel);
 
-	boldFont = WMBoldSystemFontOfSize(scr->wmscreen, WMScaleY(12));
-	panel->normalfont = WMSystemFontOfSize(WMWidgetScreen(panel->win), WMScaleY(12));
+	boldFont = WMBoldSystemFontOfSize(scr->wmscreen, WMScaleY(16));
+	panel->normalfont = WMSystemFontOfSize(WMWidgetScreen(panel->win), WMScaleY(16));
 
 	panel->dirLabel = WMCreateLabel(panel->win);
 	WMResizeWidget(panel->dirLabel, WMScaleX(200), WMScaleY(20));

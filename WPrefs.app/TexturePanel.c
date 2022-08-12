@@ -1143,7 +1143,7 @@ TexturePanel *CreateTexturePanel(WMWindow *keyWindow)
 
 	panel = wmalloc(sizeof(TexturePanel));
 
-	panel->listFont = WMSystemFontOfSize(scr, 12);
+	panel->listFont = WMSystemFontOfSize(scr, 16);
 
 	panel->win = WMCreatePanelWithStyleForWindow(keyWindow, "texturePanel",
 						     WMTitledWindowMask | WMClosableWindowMask);

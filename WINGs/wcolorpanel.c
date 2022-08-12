@@ -381,8 +381,8 @@ static WMColorPanel *makeColorPanel(WMScreen * scrPtr, const char *name)
 	panel->color.hsv.value = 0;
 	panel->color.set = cpNone;	/* Color has not been set yet */
 
-	panel->font8 = WMSystemFontOfSize(scrPtr, 8);
-	panel->font12 = WMSystemFontOfSize(scrPtr, 12);
+	panel->font8 = WMSystemFontOfSize(scrPtr, 16);
+	panel->font12 = WMSystemFontOfSize(scrPtr, 16);
 
 	panel->win = WMCreateWindowWithStyle(scrPtr, name,
 					     WMTitledWindowMask | WMClosableWindowMask | WMResizableWindowMask);

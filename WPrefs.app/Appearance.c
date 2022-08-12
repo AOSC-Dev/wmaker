@@ -1842,8 +1842,8 @@ static void createPanel(Panel * p)
 	}
 
 	panel->smallFont = WMSystemFontOfSize(scr, 10);
-	panel->normalFont = WMSystemFontOfSize(scr, 12);
-	panel->boldFont = WMBoldSystemFontOfSize(scr, 12);
+	panel->normalFont = WMSystemFontOfSize(scr, 16);
+	panel->boldFont = WMBoldSystemFontOfSize(scr, 16);
 
 	panel->onLed = WMCreatePixmapFromXPMData(scr, blueled_xpm);
 	panel->offLed = WMCreatePixmapFromXPMData(scr, blueled2_xpm);
@@ -2308,7 +2308,7 @@ static void OpenExtractPanelFor(_Panel *panel)
 	WMSetLabelTextColor(epanel->label, color);
 	WMReleaseColor(color);
 
-	font = WMBoldSystemFontOfSize(scr, 12);
+	font = WMBoldSystemFontOfSize(scr, 16);
 	WMSetLabelFont(epanel->label, font);
 	WMReleaseFont(font);
 

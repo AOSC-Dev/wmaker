@@ -56,7 +56,7 @@ WGeometryView *WCreateGeometryView(WMScreen * scr)
 	}
 	gview->view->self = gview;
 
-	gview->font = WMSystemFontOfSize(scr, 12);
+	gview->font = WMSystemFontOfSize(scr, 16);
 	if (!gview->font) {
 		W_DestroyView(gview->view);
 		wfree(gview);

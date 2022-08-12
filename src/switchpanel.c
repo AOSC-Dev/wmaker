@@ -454,7 +454,7 @@ WSwitchPanel *wInitSwitchPanel(WScreen *scr, WWindow *curwin, Bool class_only)
 	}
 
 	panel->white = WMWhiteColor(scr->wmscreen);
-	panel->font = WMBoldSystemFontOfSize(scr->wmscreen, WMScaleY(12));
+	panel->font = WMBoldSystemFontOfSize(scr->wmscreen, WMScaleY(16));
 	panel->icons = WMCreateArray(count);
 	panel->images = WMCreateArray(count);
 

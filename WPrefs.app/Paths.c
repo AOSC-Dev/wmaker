@@ -230,7 +230,7 @@ static void createPanel(Panel * p)
 	panel->black = WMBlackColor(scr);
 	panel->gray = WMGrayColor(scr);
 	panel->red = WMCreateRGBColor(scr, 0xffff, 0, 0, True);
-	panel->font = WMSystemFontOfSize(scr, 12);
+	panel->font = WMSystemFontOfSize(scr, 16);
 
 	panel->box = WMCreateBox(panel->parent);
 	WMSetViewExpandsToParent(WMWidgetView(panel->box), 2, 2, 2, 2);

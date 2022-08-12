@@ -381,7 +381,7 @@ static void createPanel(Panel * p)
 	}
 
 	panel->hsli = WMCreateSlider(panel->placF);
-	WMResizeWidget(panel->hsli, width, 12);
+	WMResizeWidget(panel->hsli, width, 16);
 	WMMoveWidget(panel->hsli, 9 + (204 - 13 - width) / 2, 45 + (109 - 13 - height) / 2 + height + 1);
 	WMSetSliderAction(panel->hsli, sliderCallback, panel);
 	WMSetSliderMinValue(panel->hsli, 0);

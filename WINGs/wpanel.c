@@ -94,7 +94,7 @@ WMAlertPanel *WMCreateAlertPanel(WMScreen * scrPtr, WMWindow * owner,
 	WMBox *hbox;
 	WMPixmap *icon;
 
-	defaultFont = WMSystemFontOfSize(scrPtr, 12);
+	defaultFont = WMSystemFontOfSize(scrPtr, 16);
 	panel = wmalloc(sizeof(WMAlertPanel));
 
 	if (owner) {
@@ -513,7 +513,7 @@ WMInputPanel *WMCreateInputPanel(WMScreen * scrPtr, WMWindow * owner, const char
 	WMFont *defaultFont;
 	int x, dw = 0, aw = 0, w;
 
-	defaultFont = WMSystemFontOfSize(scrPtr, 12);
+	defaultFont = WMSystemFontOfSize(scrPtr, 16);
 	panel = wmalloc(sizeof(WMInputPanel));
 
 	if (owner)
@@ -628,7 +628,7 @@ WMInputPanel *WMCreateScaledInputPanel(WMScreen * scrPtr, WMWindow * owner, cons
 	if (title) {
 		WMFont *largeFont;
 
-		largeFont = WMBoldSystemFontOfSize(scrPtr, WMScaleY(24));
+		largeFont = WMBoldSystemFontOfSize(scrPtr, WMScaleY(32));
 
 		panel->tLbl = WMCreateLabel(panel->win);
 		WMMoveWidget(panel->tLbl, WMScaleX(20), WMScaleY(16));
@@ -737,7 +737,7 @@ WMGenericPanel *WMCreateGenericPanel(WMScreen * scrPtr, WMWindow * owner,
 	WMBox *hbox;
 	WMPixmap *icon;
 
-	defaultFont = WMSystemFontOfSize(scrPtr, 12);
+	defaultFont = WMSystemFontOfSize(scrPtr, 16);
 	panel = wmalloc(sizeof(WMGenericPanel));
 
 	if (owner) {
